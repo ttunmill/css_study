@@ -43,3 +43,8 @@
 #papago main h1 a {color: yellow;}
 #papago main > a {color: brown;}
 #papago > a {color: cornflowerblue;}
+
+
+---------- 가이드 -------------
+.fs20 { font-size: 20px;}
+.fcr {color: red;}

@@ -1,0 +1,84 @@
+main {
+    font-family: "noto sans kr", sans-serif;
+    text-align: center;
+}
+main h1 {
+    padding-bottom: 14px;
+    padding-top: 28px;
+    font-size: 3.125rem; 
+    font-weight: 700;
+}
+main > p {padding-bottom:40px; font-weight: 300;}
+/* p vision 자간 공통 */
+main > p, 
+main .contents_bg > p,
+main .contents_bg .vision h2 {letter-spacing: -0.2px;}
+main .contents_bg {padding-top:40px; background-color: #F5F5F5;}
+main .contents_bg > p {padding-bottom:30px; line-height: 30px;}
+main .contents_bg .vision {}
+main .contents_bg .vision h2 {
+    color: #36B4E5; 
+    font-size: 1.875rem;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+main .contents_bg .vision p {line-height:45px; font-size: 2.188rem;}
+
+
+/* goal */
+.fcb {color: black;}
+.back_yellow {background-color: #F3C300;}
+.back_white {background-color: #fff;}
+.back_blue {background-color: #36b4e5;}
+
+main .contents_bg .goal h2{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    color: #36B4E5; 
+    font-size: 1.875rem;
+}
+
+main .contents_bg .goal .goal_wrap .goal_contents{
+    display: inline-block;
+    margin: 0px -10px 0px -10px;
+    width: 250px;
+    height: 250px;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    /* figma drop-shadow == css box-shadow */
+    /* box-shadow: x축 y축 blur값 색상; */
+}
+
+main .contents_bg .goal .goal_wrap .goal_contents .icon {
+    padding-top: 67px;
+    margin-bottom: 20px;
+}
+main .contents_bg .goal .goal_wrap .goal_contents .icon img {
+    width: 60px;
+    height: 60px;
+}
+main .contents_bg .goal .goal_wrap .goal_contents h3 {font-size: 1.5rem;}
+
+
+/* 선생님이 하신것 */
+main .contents_bg .goal {}
+main .contents_bg .goal h2 {}
+main .contents_bg .goal .goal_contents {}
+main .contents_bg .goal .goal_contents li {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+}
+main .contents_bg .goal .goal_contents .first {background-color: #36b4e5;}
+main .contents_bg .goal .goal_contents .second {background-color: #fff;}
+main .contents_bg .goal .goal_contents .last {background-color: #F3C300;}
+main .contents_bg .goal .goal_contents li .icon {padding-bottom: 20px;}
+main .contents_bg .goal .goal_contents li .icon img {width: 60px; height: 60px;}
+main .contents_bg .goal .goal_contents li h3 {
+    font-size: 1.5rem;
+    color: #fff; 
+    letter-spacing: -0.2px;
+}
+
+main .contents_bg .goal .goal_contents .second h3 {color: #000;}
