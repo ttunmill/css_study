@@ -80,3 +80,5 @@
 * figma drop-shadow == css box-shadow
 * box-shadow: x축 y축 blur값 색상
 * 그림자 색상, 투명도 = rgba(0, 0, 0, 0.25)
+### border-radius
+* 값 입력 필요없이 모양을 둥글게 만들고 싶다면 `50%`를 입력하면 된다.
