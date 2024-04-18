@@ -82,3 +82,39 @@ main .contents_bg .goal .goal_contents li h3 {
 }
 
 main .contents_bg .goal .goal_contents .second h3 {color: #000;}
+
+/* strategy */
+main .contents_bg .strategy h2{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    color: #36B4E5; 
+    font-size: 1.875rem;
+}
+
+main .contents_bg .strategy .strategy_list {}
+main .contents_bg .strategy .strategy_list li {
+    display: inline-block;
+
+    margin: 0px -5px 0px -5px;
+    padding-top: 50px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #eee;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+
+main .contents_bg .strategy .strategy_list li h4 {
+    /* width: max-content; */
+    float: left;
+    width: 100%;
+    font-size: 1.125rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+main .contents_bg .strategy .strategy_list li p {
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+}
