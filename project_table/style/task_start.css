@@ -1,0 +1,68 @@
+/* test_box 부분 */
+body > h1 {background-color: crimson;}
+.test_box h1 {background-color: cadetblue;}
+.test_box h2 {background-color: chartreuse;}
+.test_box h3 {background-color: chocolate;}
+.test_box h4 {background-color: coral;}
+.test_box h1#title1 {background-color: blue;}
+.test_box h2#title2 {background-color: blue;}
+.test_box > p {background-color: brown;}
+.test_box blockquote {background-color: cornflowerblue;}
+.test_box p span {background-color: aqua;}
+.test_box p q {background-color: aqua;}
+.test_box p code {background-color: aqua;}
+.test_box p sup {background-color: aqua;}
+.test_box p sub {background-color: aqua;}
+.test_box .test1 {background-color: cadetblue;}
+.test_box .test2 {background-color: chartreuse;}
+.test_box .test3 {background-color: chocolate;}
+.test_box .test4 {background-color: coral;}
+.test_box .test {font-weight: 900;}
+.test_box #wrap {background-color: blueviolet;}
+.test_box #wrap p {background-color: blue;}
+
+/* header 부분 */
+header {}
+header h1 {background-color: aqua;}
+header form {border: 1px solid black;}
+header form input {background-color: blueviolet;}
+header a {background-color: aqua;}
+
+/* box 부분 */
+.box {background-color: aliceblue;}
+.box a {background-color: red;}
+.box .contents {background-color: green;}
+.box .contents  p {background-color: blue;}
+.box .img {background-color: blueviolet;}
+
+/* main 부분 */
+main {background-color: aliceblue;}
+
+main aside {background-color: red;}
+main aside h2 {background-color: red;}
+main aside ul {background-color: red;}
+main aside ul li {background-color: red;}
+
+main section .top {background-color: green;}
+main section .top h1 {background-color: green;}
+main section .top p {background-color: green;}
+
+main section article {background-color: blue;}
+main section article p{background-color: blue;}
+
+/* table 부분 */
+#t {background-color: aliceblue;}
+#t thead {background-color: red;}
+#t thead tr {background-color: red;}
+#t thead tr th{background-color: red;}
+
+#t tbody {background-color: green;}
+#t tbody tr {background-color: green;}
+#t tbody tr td{background-color: green;}
+#t tbody tr td span{background-color: green;}
+
+#t tfoot {background-color: blue;}
+#t tfoot tr {background-color: blue;}
+#t tfoot tr th {background-color: blue;}
+#t tfoot tr td {background-color: blue;}
+#t tfoot tr td em{background-color: blue;}

@@ -1,0 +1,70 @@
+/* common */
+html, body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+main {
+    padding-top: 60px;
+    max-width: 1040px;
+    margin: 0 auto;
+    text-align: center; 
+}
+.fwb {font-weight: 700;}
+.fc8 {color: #888;}
+
+/* content start */
+.data_wrap .tbl_top_txt {font-size: 2.25rem; letter-spacing: -0.4px; line-height: 48px;}
+.data_wrap .data_info {
+    display: inline-block;
+    margin-top: 34px; 
+    max-width: 925px; 
+}
+main .data_info > p {
+    font-size: 1rem;
+    color: #888;
+    text-align: right;
+}
+
+.data_wrap .data_info_tbl {
+    border-top: 3px solid #aaa;
+    border-bottom: 1px solid #000;
+    color: #888;
+}
+
+.data_wrap .data_info_tbl tr th {text-align: center;}
+.data_wrap .data_info_tbl tr th, td {
+    padding: 15px 20px 15px 20px;
+    font-size: 1.25rem;
+    border-top: 1px solid #aaa;
+}
+
+.data_wrap .data_info_tbl tr td del {
+    display: block;
+    margin-top: 10px;
+}
+
+.data_wrap .data_info_tbl tr:nth-child(2) td span:nth-of-type(2) {font-size: 1.5rem;}
+.data_wrap .data_info_tbl tr:first-child {border-bottom: 1px solid #000;}
+.data_wrap .data_info_tbl tr th:first-child {background-color: #f5f5f5;}
+
+/* table highlight design */
+.data_wrap .data_info_tbl .highlightTop {border: 5px solid #DD037D; border-bottom: 0;}
+.data_wrap .data_info_tbl .highlightBtm {border: 5px solid #DD037D; border-top: 0; color: #DD037D;}
+.data_wrap .data_info_tbl .highlightSide {
+    border-left: 5px solid #DD037D; 
+    border-right: 5px solid #DD037D; 
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    color: #DD037D;
+}
+
+/* table promotion design*/
+.data_wrap .data_info_tbl tr .promotion {
+    padding: 3px 2px;
+    color: #fff;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    background-color: #DD037D;
+}

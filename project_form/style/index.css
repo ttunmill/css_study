@@ -1,0 +1,97 @@
+html, body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.login_wrap {
+    max-width: 510px; margin: 0 auto;
+}
+button {cursor: pointer;}
+main h1 {
+    margin-top: 84px;
+    font-size: 4.375rem;
+    font-weight: 900;
+    line-height: 101.36px;
+    letter-spacing: -0.2px;
+}
+
+main .top_txt {
+    margin-top: 25px;
+    font-size: 1.25rem;
+    line-height: 28.96px;
+    letter-spacing: -0.2px;
+}
+
+main form {margin-top: 57px;}
+main form dl dt {
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 43.44px;
+    letter-spacing: -0.2px;
+}
+
+main form dl dt:nth-of-type(2) {margin-top: 38px;}
+main form dl dd input[required] {
+    margin-top: 18px;
+    width: 500px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #222;
+    line-height: 23.17px;
+    letter-spacing: -0.2px;
+    padding: 15px 0 15px 15px;
+}
+
+main .find_pwd_btn {
+    margin-top: 38px;
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 43.44px;
+    letter-spacing: -0.2px;
+}
+
+main .sign_btn {margin-top: 32px; display: inline-block;}
+main .sign_btn button{display: block;}
+main .sign_btn button:first-child{
+    display: block;
+    width: 500px;
+    height: 53px;
+    background-color: #222;
+    border-radius: 10px;
+    font-size: 1rem;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+    color: #fff;
+}
+
+main .sign_btn button:last-child{
+    display: block;
+    margin-top: 18px;
+    width: 500px;
+    height: 53px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    font-size: 1rem;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+    color: #222;
+}
+
+main .btm_txt {
+    margin-top: 62px;
+    text-align: center;
+    color: #555;
+    line-height: 23.17px;
+    letter-spacing: -0.2px;
+}
+
+main .btm_txt a {
+    width: 510px;
+    font-weight: 700;
+    line-height: 23.17px;
+    letter-spacing: -0.2px;
+}

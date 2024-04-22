@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* 속성선택자(form관련 주로 사용) */
+        /* 태그[속성] 태그에 속성이 있을 때 */
+        /* 태그[속성=값] 속성의 값이 이것일 때 */
+        /* 태그[속성^=값] 속성값이 이것으로 시작할때 */
+        /* 태그[속성$=값] 속성값이 이것으로 끝날때 */
+        /* 태그[속성*=값] 속성값이 이것을 포함할때 */
+        #search_frm {background-color: bisque;}
+        #search_frm input[required] {background-color: blue;}
+        #search_frm input[type=text] {background-color: lime;}
+        #search_frm input[type^=p] {background-color: pink;}/* 타입에 p로 시작하는것을 pink로 */
+        #search_frm input[type$=l] {background-color: crimson;}/* 타입에 l로 끝나는것을 crimson로 */
+        #search_frm input[type*=ex] {background-color: coral;}/* 타입에 ex가 포함되어있는것을 coral로 */
+    </style>
+</head>
+<body>
+    <h1>form 태그</h1>
+    <form action="#" method="get" id="search_frm">
+        <fieldset>
+            <legend>검색양식</legend><!-- 숨김 기능으로 안보이게 설정 -->
+            <!--
+                fieldset, legend는 HTML 폼 양식 구분용으로 
+                css에선 보이지 않도록 숨긴다. 
+                fieldset은 border숨기기로 
+                legend는 요소자체를 화면에서 숨기는 식으로 처리하여
+                디자인에 방해되지 않도록 설정한다.
+            -->
+            <input type="text" name="user_id" value=""> <!-- 아이디 -->
+            <input type="number" name="item_count" value="1"><!-- 쇼핑몰 상품 수량 -->
+            <input type="password" name="resident_last" value=""><!-- 주민등록번호 뒷자리 -->
+            <input type="email" name="user_mail" value=""><!-- 메일아이디 -->
+            <input type="search" name="search_txt" value="">
+            <input type="date" name="reservation_year_month_day" value=""><!-- 숙소예약일 -->
+            <input type="time" name="reservation_pickup_time" value="15시"><!-- 픽업시간 -->
+            <input type="url" name="portfolio_url" value="https://~"><!-- 포트폴리오주소 -->
+        </fieldset>
+        <!-- 그룹2 -->
+        <fieldset>
+            <legend class="skip">가입양식</legend>
+            <!-- 아디이, 비번, 주민등록번호, 주소 -->
+            <dl>
+                <dt>아이디(최대 10글자 제한)*필수</dt>
+                <dd><input type="text" name="user_id" maxlength="10" required></dd><!-- required 필수, 무조건 작성해야함 -->
+                <dt>비밀번호(최대 20글자 제한)*필수</dt>
+                <dd><input type="password" name="user_pwd" maxlength="20" required></dd>
+                <dt>주민등록번호</dt>
+                <dd>
+                    <input type="password" name="resident_start" maxlength="6" required> -
+                    <input type="password" name="resident_end" maxlength="7" required>
+                </dd>
+                <dt>주소</dt>
+                <dd>
+                    우편번호 : <input type="number" name="user_zip_code" maxlength="5" required> <br>
+                    상세주소 : <input type="text" name="user_address" required> <br>
+                    메일주소 : <input type="email" name="user_email" required>
+                </dd>
+            </dl>
+            <div class="btn_g">
+                <button type="submit" id="join_btn">회원가입</button>
+                <button type="reset" id="join_reset">가입취소</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
