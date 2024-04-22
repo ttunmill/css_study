@@ -7,8 +7,6 @@ html, body {
 }
 main {
     padding-top: 60px;
-    max-width: 1040px;
-    margin: 0 auto;
     text-align: center; 
 }
 .fwb {font-weight: 700;}
@@ -28,6 +26,7 @@ main .data_info > p {
 }
 
 .data_wrap .data_info_tbl {
+    margin-top: 5px;
     border-top: 3px solid #aaa;
     border-bottom: 1px solid #000;
     color: #888;
@@ -62,7 +61,7 @@ main .data_info > p {
 
 /* table promotion design*/
 .data_wrap .data_info_tbl tr .promotion {
-    padding: 3px 2px;
+    padding: 2px 5px;
     color: #fff;
     font-size: 0.875rem;
     border-radius: 5px;
