@@ -82,3 +82,38 @@
 * 그림자 색상, 투명도 = rgba(0, 0, 0, 0.25)
 ### border-radius
 * 값 입력 필요없이 모양을 둥글게 만들고 싶다면 `50%`를 입력하면 된다.
+---
+## table
+### `tr`행, `td`내용열
+* 열(td)는 항상 행(tr)안에 존재해야 합니다.
+* table은 행,열을 자식, 자손으로 가지는 부모로써 존재합니다.
+### `thead`, `tbody`, `tfoot` 행 그룹
+* thead : 제목행그룹, th위주로 구성된 제목행(tr)을 묶을 때 사용합니다.
+* tbody : 내용행그룹, th위주로 구성된 내용행(tr)을 묶을 때 사용합니다.
+* tfoot : 결과행그룹, th&td들로 구성된 결과값을 가지는 결과행(tr) 묶을 때 사용합니다.
+### `colspan`, `rowspan`
+* colspan : 수평열 합치기
+* rowspan : 수직열 합치기
+---
+## form요소와 속성
+### `<form action="#" method=""></form>`
+* action : 폼 데이터를 제출할 서버 스크립트 지정
+* method : 폼 데이터를 제출하는 방법
+* fieldset, legend : fieldset 양식의 일부를 그룹화하는 태그이며 legend는 그룹에 제목을 포함시킨다.
+#### '<input type="" name="">'
+* type : input 요소가 나타낼 입력 필드의 종류를 정합니다.
+* name : input 요소의 이름을 지정합니다.(데이터 구분)
+* readonly : input 요소의 입력 필드가 읽기 전용임을 명시합니다.
+* autofocus, autocomplete : 페이지가 로드될때 자동으로 포커스하게 해주는 기능, 사용자가 이전에 입력했던 값들을 드롭다운 옵션으로 보여줍니다.
+* value : input 요소의 초기값을 지정합니다.
+* placeholder : 입력 필드에 사용자가 적절한 값을 입력할 수 있도록 도와주는 짧은 도움말을 명시합니다.
+* value 와 placeholder의 차이점 : 
+* maxlength : input 요소의 글자수 제한설정합니다.
+### '<textarea></textarea>'
+* rows, cols : rows는 텍스트 컨트롤에 볼수 있는 텍스트의 행의 수, cols는 텍스트 컨트롤의 외관상의 폭
+* 사용용도 및 주의사항 : 
+### input 입력양식과 선택양식
+* text, url 등의 사용자가 직접입력가능한 입력양식
+* radio 등의 사용자의 입력이 아닌 선택으로 들어가는 선택양식
+* `name` : 입력양식(데이터구분용), 선택양식(데이터구분(개별데이터x, 그룹데이터구분용))
+* `value` : 입력양식(초기값), 선택양식(개별데이터구분용)

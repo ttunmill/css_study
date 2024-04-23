@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/form2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1><a href="#"><img src="./images/Logo.png" alt="Spotify"></a></h1>
+        <div class="btn_tap">
+            <input type="radio" name="sign" id="sign_in_btn" checked>
+            <label for="sign_in_btn">SIGN IN</label>
+            <input type="radio" name="sign" id="sign_up_btn">
+            <label for="sign_up_btn">SIGN UP</label>
+        </div>
+        <div class="sign_in_tap" id="sign_in_tap">
+            <form action="#" method="post" id="login_frm">
+                <fieldset>
+                    <legend>로그인양식</legend>
+                    <ul>
+                        <li><input type="text" name="user_id" id="user_id" placeholder="Username"></li>
+                        <li><input type="password" name="user_pwd" id="user_pwd" placeholder="Password"></li>
+                        <li><input type="checkbox" name="stay_sign" value="stay_sign" id="stay_sign"><label for="stay_sign">stay signed in</label></li>
+                        <li><button type="submit" id="login">SIGN IN</button></li>
+                        <li><a href="#">Forget Password ?</a></li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div class="sign_in_tap" id="sign_up_tap">
+
+        </div>
+    </main>
+</body>
+</html>
