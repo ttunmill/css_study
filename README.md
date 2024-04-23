@@ -100,7 +100,7 @@
 * action : 폼 데이터를 제출할 서버 스크립트 지정
 * method : 폼 데이터를 제출하는 방법
 * fieldset, legend : fieldset 양식의 일부를 그룹화하는 태그이며 legend는 그룹에 제목을 포함시킨다.
-#### '<input type="" name="">'
+### `<input type="" name="">`
 * type : input 요소가 나타낼 입력 필드의 종류를 정합니다.
 * name : input 요소의 이름을 지정합니다.(데이터 구분)
 * readonly : input 요소의 입력 필드가 읽기 전용임을 명시합니다.
@@ -109,7 +109,7 @@
 * placeholder : 입력 필드에 사용자가 적절한 값을 입력할 수 있도록 도와주는 짧은 도움말을 명시합니다.
 * value 와 placeholder의 차이점 : 
 * maxlength : input 요소의 글자수 제한설정합니다.
-### '<textarea></textarea>'
+### `<textarea></textarea>`
 * rows, cols : rows는 텍스트 컨트롤에 볼수 있는 텍스트의 행의 수, cols는 텍스트 컨트롤의 외관상의 폭
 * 사용용도 및 주의사항 : 
 ### input 입력양식과 선택양식
