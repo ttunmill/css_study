@@ -1,0 +1,270 @@
+html, body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #F5F5F5;
+}
+
+main {
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 41px;
+    margin-bottom: 41px;
+}
+
+main > * {
+    width: 612px;
+    margin: 0 auto;
+}
+
+main h1 {text-align: center; margin-bottom: 41px;}
+
+/* 생일 부분 위아래 버튼 삭제 */
+.input_design_five input[type=number]::-webkit-outer-spin-button,
+.input_design_five input[type=number]::-webkit-inner-spin-button,
+.input_design_two input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.input_design_five input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* law contents */
+main .law {
+    margin-bottom: 54px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-y: auto;
+    background-color: #fff;
+    height: 200PX;
+    font-size: 0.75rem;
+    letter-spacing: -0.2px;
+}
+
+main .law h2 {margin-bottom: 47px; line-height: 19.2px;}
+main .law p {margin-bottom: 27px; line-height: 19.2px;}
+main .law p:last-child {margin-bottom: 0;}
+
+/* login form */
+
+/* .input_design_one {} */
+/* .input_design_two {} */
+/* .input_design_thr {} */
+/* .input_design_fou {} */
+/* .input_design_five {} */
+
+main #join_frm {}
+
+main #join_frm dl {overflow: hidden;}
+main #join_frm dl dt{
+    float: left;
+    margin-right: 36px;
+    padding: 8.5px 0;
+    width: 120px;
+    line-height: 23.17px;
+    letter-spacing: -0.2px;
+}
+
+/* 내용 (버튼위치, 빈) 공통 */
+main #join_frm dl dd:nth-child(3n) {}
+
+main #join_frm dl dt span {color: #FF0000;}
+
+/* main #join_frm dl .input_design_one input {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 36px;
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+} */
+
+/* input 아이디, 비밀번호, 확인, 이름, 이메일, 휴대폰 입력 */
+main #join_frm dl input {font-size: 0.875rem;}
+
+main #join_frm dl .input_design_one input[name^=user] {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 36px;
+    padding: 0 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    font-size: 0.875rem;
+}
+
+main #join_frm dl dd .double_check {
+    float: right;
+    padding: 10px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    font-size: 0.875rem;
+    line-height: 20.27px;
+    letter-spacing: -0.2px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #9e00b7;
+}
+
+main #join_frm dl .input_design_two select {
+    float: left;
+    padding-left: 9px;
+    appearance: none; /* select의 기본 화살표 숨기기 */
+    background-image: url(../images/arrow_drop_down.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 5px;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    border: 1px solid #aaa;
+}
+
+main #join_frm dl .input_design_two input {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 36px;
+    width: 245px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    line-height: 20.27px;
+    letter-spacing: -0.2px;
+    border: 1px solid #aaa;
+}
+
+main #join_frm dl dd #phone_certification {
+    float: left;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    background-color: #ccc;
+    width: 120px;
+    height: 40px;
+    font-size: 0.875rem;
+    line-height: 20.27px;
+    letter-spacing: -0.2px;
+}
+
+main #join_frm dl dt:nth-of-type(7) {padding: 22.5px 0;}
+main #join_frm dl .input_design_thr {
+    margin-right: 36px;
+    margin-bottom: 10px;
+    float: left;
+    width: 300px;
+    /* height: 68px; */
+}
+
+/* 내가 한 방식 */
+/* main #join_frm dl .input_design_thr button {
+    background-color: #fff;
+    border: 1px solid #9e00b7;
+    border-radius: 5px;
+    width: 300px;
+    height: 43px;
+} */
+
+/* main #join_frm dl .input_design_thr span {
+    margin-top: 5px;
+    color: #aaa;
+    font-size: 0.875rem;
+} */
+
+
+/* 선생님이 하셨던 방식 */
+main #join_frm dl dd #address_search {
+    background-color: #fff;
+    border: 1px solid #9e00b7;
+    border-radius: 5px;
+    width: 300px;
+    height: 43px;
+}
+
+main #join_frm dl dd #address_search + span {
+    display: inline-block;
+    margin-top: 5px;
+    color: #aaa;
+    font-size: 0.875rem;
+    line-height: 20.27px;
+}
+
+
+main #join_frm dl .input_design_fou {
+    float: left;   
+    padding: 10px;
+    margin-right: 36px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+
+main #join_frm dl dd input[name=gender] {display: none;}
+main #join_frm dl dd input[name=gender]:checked + label {
+    padding-left: 21px;
+    background-image: url(../images/gender_checked.svg);
+    /* background-repeat: no-repeat; */
+}
+main #join_frm dl dd label {
+    margin-right: 30px;
+    display: inline-block;
+    padding-left: 21px;
+    background-image: url(../images/gender_unchecked.svg);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    font-size: 0.875rem;
+    letter-spacing: -0.2px;
+}
+
+main #join_frm dl dd label:last-child {
+    margin: 0;
+}
+
+
+main #join_frm dl .input_design_five {
+    float: left;
+    margin-right: 36px;
+    margin-bottom: 54px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #9e00b7;
+    border-radius: 5px;
+}
+main #join_frm dl .input_design_five input[name^=birthday]:first-child {width: 36px;}
+main #join_frm dl .input_design_five input[name^=birthday]{
+    padding: 0;
+    width:29px;
+    border: none;
+    font-size: 0.875rem;
+    letter-spacing: -0.2px;
+}
+
+main #join_frm dl .input_design_five input[name^=birthday] + span {
+    color: #ccc;
+    padding: 0 15px;
+}
+
+main #join_frm dl .submit_btn {text-align: center;}
+main #join_frm dl .submit_btn button[type=submit] {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    background-color: #9e00b7;
+    border: none;
+    border-radius: 10px;
+}

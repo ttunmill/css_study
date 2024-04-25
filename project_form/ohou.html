@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 │ 오늘의 집</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/ohou.css">
+    
+</head>
+<body>
+    <main>
+        <h1>회원가입</h1>
+        <p>SNS계정으로 간편하게 회원가입</p>
+        <ul>
+            <li><a href="#"><img src="./images/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="./images/kakao.png" alt="kakaotalk"></a></li>
+            <li><a href="#"><img src="./images/naver.png" alt="naver"></a></li>
+        </ul>
+        <form action="#" method="post" id="login_frm">
+            <fieldset>
+                <legend>로그인 양식</legend>
+                <div class="contents_email">
+                    <p>이메일</p>
+                    <input type="email" name="user_email" id="user_email" placeholder="이메일">
+                    <span>@</span>
+                    <select name="email_choice" id="user_email_choice">
+                        <option value="">선택해주세요</option>
+                        <option value="naver">naver.com</option>
+                        <option value="hanmail">hanmail.net</option>
+                        <option value="daum">daum.net</option>
+                        <option value="gmail">gmail.com</option>
+                        <option value="nate">nate.com</option>
+                        <option value="hotmail">hotmail.com</option>
+                        <option value="outlook">outlook.com</option>
+                        <option value="icloud">icloud.com</option>
+                        <option value="icloud">icloud.com</option>
+                        <option value="manual">직접입력</option>
+                    </select>
+                    <button type="button" id="email_authentication">이메일 인증하기</button>
+                </div>
+                <div class="pwd_contents">
+                    <p>비밀번호</p>
+                    <p class="txt">영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요</p>
+                    <input type="password" name="user_pwd" id="user_pwd" placeholder="비밀번호">
+                </div>
+                <div class="pwd_contents">
+                    <p>비밀번호 확인</p>
+                    <input type="password" name="user_pwd" placeholder="비밀번호 확인">
+                </div>
+                <div class="nick_contents">
+                    <p>닉네임</p>
+                    <p class="txt">다른 유저와 겹치지 않도록 입력해주세요. (2~20자)</p>
+                    <input type="text" name="user_nick_name" id="user_nick_name" minlength="2" maxlength="20" placeholder="별명 (2~20자)">
+                </div>
+            </fieldset>
+        </form>
+        <form class="contents_law">
+            <fieldset>
+                <legend>약관동의란</legend>
+                <p>약관동의</p>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="user_agree" id="check_all" class="check_box" required>
+                        <label for="check_all">전체동의</label>
+                        <span>선택항목에 대한 동의 포함</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="user_agree" id="check_1" class="check_box" required>
+                        <label for="check_1">만 14세 이상입니다</label>
+                        <span class="essential">(필수)</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="user_agree" id="check_2" class="check_box" required>
+                        <label for="check_2">이용약관</label>
+                        <span class="essential">(필수)</span>
+                        <a href="#"><span class="arrow"></span></a>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="user_agree" id="check_3" class="check_box">
+                        <label for="check_3">개인정보수집 및 이용동의</label>
+                        <span class="essential">(필수)</span>
+                        <a href="#"><span class="arrow"></span></a>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="user_agree" id="check_4" class="check_box">
+                        <label for="check_4">개인정보 마케팅 활용 동의</label>
+                        <span>(선택)</span>
+                        <a href="#"><span class="arrow"></span></a>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="user_agree" id="check_5" class="check_box">
+                        <label for="check_5">이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신</label>
+                        <span>(선택)</span>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <div class="submit_btn_contents">
+            <button type="submit">회원가입하기</button>
+            <span>이미 아이디가 있으신가요? <a href="#">로그인</a></span>
+        </div>
+    </main>
+</body>
+</html>

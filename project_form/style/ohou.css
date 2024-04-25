@@ -1,0 +1,259 @@
+html, body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    width: 100%;
+    margin: 57px auto;
+    
+}
+
+main > * {
+    width: 360px;
+    margin: 0 auto;
+}
+
+/* main head 부분 */
+main h1 {
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+}
+
+main > p {
+    margin-bottom: 30px;
+    font-size: 0.875rem;
+    letter-spacing: -0.2px;
+    color: #aaa;
+    text-align: center;
+}
+
+main > ul {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+}
+
+main > ul li {
+    margin-right: 30px;
+    display: inline-block;
+}
+main > ul li:last-child {margin: 0;}
+
+/* login form 부분 */
+main #login_frm {}
+main #login_frm fieldset > div {margin-bottom: 30px;}
+main #login_frm div p:first-child {
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    margin-bottom: 15px;
+}
+
+main #login_frm div .txt {
+    font-size: 0.75rem;
+    letter-spacing: -0.2px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+main #login_frm .contents_email {overflow: hidden;}
+main #login_frm .contents_email input[name$=email] {
+    padding: 0 10px;
+    float: left;
+    width: 165px;
+    height: 40px;
+    font-size: 0.875rem;
+    letter-spacing: -0.2px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    line-height: 40px;
+}
+
+main #login_frm .contents_email span {
+    float:left;
+    padding: 0 7px;
+    line-height: 40px;
+    color: #aaa; 
+}
+
+main #login_frm .contents_email select[name^=email] {
+    float: right;
+    appearance: none;
+    background-image: url(../images/ohou_arrow_down.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 0 10px;
+    width: 165px;
+    height: 40px;
+    font-size: 0.875rem;
+    letter-spacing: -0.2px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+main #login_frm .contents_email button {
+    margin-top: 10px;
+    width: 360px;
+    height: 50px;
+    border: 1px solid #aaa;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    color: #aaa;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+}
+
+main #login_frm div[class$=contents] input[name^=user] {
+    padding: 0 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 360px;
+    height: 40px;
+    font-size: 0.875rem;
+    letter-spacing: -0.2px;
+    line-height: 40px;
+}
+
+main .contents_law fieldset > p{
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    margin-bottom: 15px;
+}
+
+main .contents_law ul {
+    padding: 30px 20px;
+    border: 1px solid #aaa;
+}
+
+main .contents_law ul li {margin-bottom: 20px; overflow: hidden;}
+main .contents_law ul li:last-child {margin: 0;}
+
+main .contents_law ul li:first-child {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #aaa;
+}
+
+main .contents_law ul li:first-child label {
+    font-size: 0.75rem;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+}
+
+main .contents_law ul li:first-child label + span {
+    margin-left: 5px;
+    font-size: 0.625rem;
+    letter-spacing: -0.2px;
+    color: #aaa;
+}
+
+main .contents_law ul li label {
+    font-size: 0.75rem;
+    letter-spacing: -0.2px;
+}
+
+main .contents_law ul li label + .essential {
+    margin-left: 5px;
+    font-size: 0.625rem;
+    color: #70badf;
+}
+
+main .contents_law ul li label + span {
+    margin-left: 5px;
+    font-size: 0.625rem;
+    color: #aaa
+}
+
+main .contents_law ul li input {display: none;}
+main .contents_law ul li input:checked + label {
+    background-image: url(../images/ohou_check.svg);
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    padding-left: 28px;
+}
+
+main .contents_law ul li input + label {
+    background-image: url(../images/ohou_uncheck.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 28px;
+}
+
+main .contents_law ul li .arrow {
+    float: right;
+    background-image: url(../images/arrow_forward_ios.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+/* 회원가입버튼 시작 */
+
+.submit_btn_contents {
+    margin-top: 30px;
+    text-align: center;
+}
+.submit_btn_contents button {
+    width: 360px;
+    height: 50px;
+    letter-spacing: -0.2px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    background-color: #0aaddb;
+    color: #fff;
+}
+
+.submit_btn_contents span {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 0.875rem;
+    color: #aaa;
+}
+
+.submit_btn_contents span a {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:359px) {
+    main {width: 100%;}
+    main > * {width: 100%;}
+
+    main h1 {
+        font-size: 1rem
+    }
+
+    main > p {
+        font-size: 0.75rem;
+    }
+
+    main > ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    main #login_frm .contents_email {
+        overflow: unset;
+        text-align: center;
+    }
+
+    main #login_frm .contents_email span {
+        display: inline-block;
+        float: none;
+    }
+
+    main #login_frm div[class$=contents] input[name^=user] {width: 100%;}
+    main #login_frm .contents_email button {width: 100%;}
+    .submit_btn_contents button {width: 100%;}
+    main #login_frm .contents_email input[name$=email] {width: 100%;}
+    main #login_frm .contents_email select[name^=email] {width: 100%;}
+}   
