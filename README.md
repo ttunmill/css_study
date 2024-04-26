@@ -117,3 +117,33 @@
 * radio 등의 사용자의 입력이 아닌 선택으로 들어가는 선택양식
 * `name` : 입력양식(데이터구분용), 선택양식(데이터구분(개별데이터x, 그룹데이터구분용))
 * `value` : 입력양식(초기값), 선택양식(개별데이터구분용)
+---
+## CSS Layout
+### float, flex
+* `float` : 형제 관계에 해당하는 block or inline tag 왼쪽, 오른쪽 정렬할 때 사용
+* ex) : ul-li *3개 정렬 `ul li {float : left;}`
+* `flex` : 정렬하고자 하는 아이템의 부모한테 flex를 먼저 설정한다.
+* ex) : ul-li *3개 정렬 `ul {display : flex;}`
+* flex 설정 시 기본값 : 메인축(수평), 교차축(수직)
+* `display : flex` : 정렬대상의 부모 설정 속성값, 설정 시 해당 부모 기준 자식까지(자손X) flexible box layout으로 처리하겠다!
+### flex
+* **부모에 적용하는 속성**
+* flex-direction : container에 적용하는 속성으로 container안의 item의 메인축 방향을 설정합니다. 
+(row, row-reverse, column, column-reverse)
+* flex-wrap : container에 적용하는 속성으로 container 내부 items 줄바꿈처리를 설정합니다. 
+(wrap, wrap-reverse, nowrap[기본값])
+* flex-flow : container에 적용하는 속성으로 flex-direction과 flex-wrap을 묶음으로 처리할 수 있습니다. 
+(flex-flow: row wrap;)
+* justify-content : container에 적용하는 속성으로 메인축의 정렬방법을 설정합니다.
+(flex-start, flex-end, center, space-between, space-around)
+* align-content : container에 적용하는 속성으로 교차축의 아이템이 2줄 이상일 경우 정렬방법입니다.
+(stretch[기본값], flex-start, flex-end, center, space-between, space-around)
+* align-items : container에 적용하는 속성으로 교차축의 아이템이 1줄 일 경우 정렬방법입니다.
+(stretch[기본값], flex-start, flex-end, center, space-between, space-around)
+* **자식에 적용하는 속성**
+* align-self : item에 적용하는 속성으로 container에 적용하는 align-items보다 우선순위가 높습니다. flex box의 교차축을 정렬합니다.
+(flex-start, flex-end, center, baseline)
+* order : item에 적용하는 속성으로 아이템의 정렬 순서 설정
+(-1, 0, 1, 2, ……)
+* flex : flex-grow, flex-shrink, flex-basis 묶음 속성입니다.
+(flex : grow shrink basis)

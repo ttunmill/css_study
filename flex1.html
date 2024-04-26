@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-0426</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .container {
+            display: flex;
+            /* padding: 20px; */
+            width: 500px;
+            height: 500px;
+
+            /* flex-direction : 부모속성, 아이템정렬방향(메인축) */
+            /* flex-direction: column; */
+
+            /* wrap, nowrap 상황에 따라 사용 */
+            /* flex-wrap: wrap; */
+
+            flex-flow: row wrap;
+            
+            /* justify-content: space-between; */
+            justify-content:center;
+            align-items: center;
+            
+            /* align-content: center; */
+
+            background-color:grey;
+            
+            /* flex 공부 (부모-정렬대상의 부모) */
+        }
+        .container .item {
+            /* flex 공부 (자식-정렬대상) */
+            flex: 1; /* 일정한 비율 유지 */
+            /* width: 25%; */
+
+            /* 공통 디자인 */
+            /* width: 100px; */ line-height: 100px; height: 100px;
+            text-align: center; font-size: 2rem;
+        }
+        .container .a {
+            flex: 4;
+            background-color: red;
+            order: 3;
+        }
+        .container .b {
+            flex: 1;
+            background-color: green;
+            order: 2;
+            align-self: flex-start;
+        }
+        .container .c {
+            flex: 1;
+            background-color: blue;
+            order: 1;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item a">
+            <div>
+                <p>a-1</p>
+                <p>a-2</p>
+            </div>
+        </div>
+        <div class="item b">B</div>
+        <div class="item c">C</div>
+        <div class="item b">B</div>
+        <div class="item b">B</div>
+        <div class="item c">C</div>
+        <div class="item b">B</div>
+
+    </div>
+</body>
+</html>
