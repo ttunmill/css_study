@@ -1,32 +1,73 @@
 /* 배경 공통&개별값 */
 main {}
 
+main section .sponsor_btn::after,
+main article .sponsor_btn::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/btn_right_arrow.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+main section .sponsor_btn,
+main article .sponsor_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 409px;
+    height: 71px;
+    margin-bottom: 90px;
+    border-radius: 50px;
+    font-size: 2.125rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg, #F29300, #FF7300);
+    /*     
+    gradient 적용을 위해 background 통합속성을 사용했을 때
+    요소 추가 배경이미지 꾸미기를 원한다면 가상선택자(before, after)를 활용하는것을 권장한다. 
+    */
+}
+
 main .bg {
     background-position: center;
     background-repeat: no-repeat;
 }
 
+main .bg > section,
+main .bg > article {
+    width: 1250px;
+    margin: 0 auto;
+}
+
 main .content01 {
-    background-image: url(../images/bg.jpg);
     height: 1002px;
+    background-image: url(../images/bg.jpg);
 }
 
 main .content02 {
     background-image: url(../images/bg_2.jpg);
-    height: 500px;
 }
 
 main .content03 {
+    padding: 113px 0;
     background-image: url(../images/bg_3.jpg);
-    height: 1241px;
+}
+
+main .content04 {
+    padding: 117px 0;
+    background-image: url(../images/bg_4.jpg);
+}
+
+main .content05 {
+    padding: 226px 0;
+    background-image: url(../images/bg_5.jpg);
 }
 
 /* ---------- 1. 표지 ----------*/
-main .content01 section {
-    overflow: hidden;
-    width: 1250px; 
-    margin: 0 auto; 
-}
+main .content01 section {overflow: hidden;}
 
 main .content01 section h1 {margin-bottom: 141px;}
 main .content01 section h1 a {}
@@ -41,36 +82,6 @@ main .content01 section h2 {
 }
 
 main .content01 section h2 span {font-weight: 700;}
-
-main .content01 section .sponsor_btn::after {
-    /* before 앞, after 뒤 */
-    content: '';
-    display: inline-block;
-    background-image: url(../images/btn_right_arrow.svg);
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 32px;
-}
-
-main .content01 section .sponsor_btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 409px;
-    height: 71px;
-    margin-bottom: 90px;
-    border-radius: 50px;
-    font-size: 2.125rem;
-    font-weight: 700;
-    color: #fff;
-    background: linear-gradient(90deg, #F29300, #FF7300);
-    /*
-    gradient 적용을 위해 background 통합속성을 사용했을 때
-    요소 추가 배경이미지 꾸미기를 원한다면 가상선택자(before, after)를 활용하는것을 권장한다. 
-    */
-}
-
 main .content01 section .question_btn::before {
     content: '';
     display: inline-block;
@@ -108,32 +119,47 @@ main .content01 section .question_btn {
 
 /* ---------- 2. 퀴즈 ----------*/
 /* left content02_g01 */
+main .content02 article > * {flex: 1;/* width: 50%; */}
+
 main .content02 article {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 1250px;
-    margin: 0 auto;
-    height: 500px;
+}
+
+main .content02 article .content02_g01 {padding: 38px 0;}
+
+main .content02 article form fieldset {
+    width: 450px;
+    text-align: center;
 }
 
 main .content02 article .content02_g01 fieldset h3 {
     margin-bottom: 17px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 3.438rem;
     color: #fff;
+    letter-spacing: -0.1px;
 }
 
-main .content02 article .content02_g01 fieldset > p:first-of-type {
+main .content02 article .content02_g01 fieldset h3+p {
     margin-bottom: 30px;
     font-size: 1.25rem;
+    line-height: 1.7;
     color: #fff;
 }
-main .content02 article .content02_g01 fieldset .quiz_list {margin-bottom: 34px; padding: 20px 20px 0;}
-main .content02 article .content02_g01 fieldset .quiz_list li {margin-bottom: 34px;}
-main .content02 article .content02_g01 fieldset .quiz_list li:last-child{margin: 0;}
 
+main .content02 article .content02_g01 fieldset .quiz_list {
+    margin-bottom: 34px; 
+    padding: 0 30px 0;
+}
+
+main .content02 article .content02_g01 fieldset .quiz_list li {
+    margin-bottom: 34px;
+    text-align: left;
+}
+
+main .content02 article .content02_g01 fieldset .quiz_list li:last-child{margin: 0;}
 main .content02 article .content02_g01 fieldset .quiz_list li input {display: none;}
 main .content02 article .content02_g01 fieldset .quiz_list li input:checked + label {
     display: inline-block;
@@ -142,7 +168,8 @@ main .content02 article .content02_g01 fieldset .quiz_list li input:checked + la
     background-repeat: no-repeat;
     background-size: 28px;
     width: 28px;
-    height: 28px;
+    /* height: 28px; */
+    line-height: 28px;
 }
 
 main .content02 article .content02_g01 fieldset .quiz_list li input + label {
@@ -152,11 +179,8 @@ main .content02 article .content02_g01 fieldset .quiz_list li input + label {
     background-repeat: no-repeat;
     background-size: 28px;
     width: 28px;
-    height: 28px;
-}
-
-
-main .content02 article .content02_g01 fieldset .quiz_list li label {
+    /* height: 28px; */
+    line-height: 28px;
     font-size: 1.25rem;
     color: #fff;
 }
@@ -173,7 +197,13 @@ main .content02 article .content02_g01 p button {
 
 /* right content02_g02 */
 main .content02 article .content02_g02 {}
-main .content02 article .content02_g02 .total_box{margin-bottom: 46px;}
+main .content02 article .content02_g02 .total_box{
+    margin-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 main .content02 article .content02_g02 .total_box .total_box_head {
     display: flex;
     align-items: center;
@@ -182,6 +212,9 @@ main .content02 article .content02_g02 .total_box .total_box_head {
     height: 75px;
     background-color: #FF7300;
     border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: 700
 }
 
 main .content02 article .content02_g02 .total_box .total_box_head::before {
@@ -191,13 +224,6 @@ main .content02 article .content02_g02 .total_box .total_box_head::before {
     background-size: 32px;
     width: 32px;
     height: 32px;
-}
-
-main .content02 article .content02_g02 .total_box .total_box_head {
-    display: flex;
-    color: #fff;
-    font-size: 1.625rem;
-    font-weight: 700
 }
 
 main .content02 article .content02_g02 .total_box .total_box_body {
@@ -212,14 +238,64 @@ main .content02 article .content02_g02 .total_box .total_box_body {
     color: #FF7300;
 }
 
-main .content02 article .content02_g02 .total_box .total_box_body span .total_box_body_fc {
-    font-size: 3.438rem;
-    font-weight: 700;
-}
-main .content02 article .content02_g02 .total_box .total_box_body span .total_box_body_fcb {color: #000;}
+main .content02 article .content02_g02 .total_box .total_box_body .total_box_body_txt{font-weight: 700;}
+main .content02 article .content02_g02 .total_box .total_box_body .total_box_body_txt .total_box_body_fc {font-size: 3.438rem;font-weight: 700;}
+main .content02 article .content02_g02 .total_box .total_box_body .total_box_body_txt .total_box_body_fcb {color: #000;font-weight: 700;}
 main .content02 article .content02_g02 > p {
     text-align: right;
     color: #fff;
 }
 
 /* ---------- 3. 동영상 ----------*/
+main .content03 section h3{
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 3.438rem;
+    font-weight: 700;
+    letter-spacing: -0.1px;
+    line-height: 1.2;
+}
+
+main .content03 section p {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+/* ---------- 4. 50퍼 감소 ----------*/
+main .content04 section h3 {
+    margin-bottom: 70px;
+    font-size: 3.438rem;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+main .content04 section h3 em {
+    background-color: #fff;
+    color: #2E3148;
+    font-weight: 500;
+}
+
+main .content04 section .txt {
+    margin-bottom: 70px;
+    font-weight: 500;
+    line-height: 1.3;
+    font-size: 1.625rem;
+    color: #fff;
+}
+
+/* ---------- 5. 빙하 ----------*/
+main .content05 section > * {text-align: center;}
+main .content05 section > h3 {
+    margin-bottom: 25px;
+    font-size: 2.688rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+main .content05 section h3+p {
+    margin-bottom: 127px;
+    font-size: 1.625rem;
+    line-height: 1.2;
+}

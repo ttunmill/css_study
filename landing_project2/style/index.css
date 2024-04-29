@@ -1,0 +1,171 @@
+/* 공통 */
+main .bg_type1 {background-color: #2AC1BC;}
+main .bg_type2 {background-color: #fff;}
+main .bg_type1 section, main .bg_type2 section {
+    margin: 0 auto;
+    width: 1250px;
+}
+
+
+/* ----- content01 Start----- */
+main .content01 {padding: 45px 0;}
+main .content01 section h1 {
+    margin-bottom: 105px;
+    text-align: center;
+}
+
+main .content01 section .main_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .content01 section .main_list li {flex: 1;}
+main .content01 section .main_list .main_list_g01 h2{
+    margin-bottom: 65px;
+    font-size: 3.438rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+}
+
+main .content01 section .main_list .main_list_g01 a {
+    display: inline-block;
+    font-size: 2.688rem;
+    font-weight: 700;
+    color: #2AC1BC;
+    padding: 10px 30px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+main .content01 section .main_list .main_list_g01 a::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/download_arrow.png);
+    width: 40px;
+    height: 36px;
+}
+
+main .content01 section .main_list .main_list_g02 {text-align: right;}
+/* ----- content01 End ----- */
+
+/* ----- content02 Start ----- */
+main .content02 {padding: 70px 0;}
+main .content02 section h3 {
+    margin-bottom: 41px;
+    text-align: center;
+    font-size: 2.125rem;
+    font-weight: 500;
+    color: #2AC1BC;
+}
+
+main .content02 section > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .content02 section .content02_g1,
+main .content02 section .content02_g2 {flex: 1;}
+
+main .content02 section .content02_g1 fieldset ul li {margin-bottom: 30px;}
+main .content02 section .content02_g1 fieldset ul li:last-child {margin:0; text-align: center;}
+main .content02 section .content02_g1 fieldset ul li input {display: none;}
+main .content02 section .content02_g1 fieldset ul li input + label {
+    display: inline-block;
+    padding-left: 65px;
+    background-image: url(../images/uncheck_btn.png);
+    background-size: 45px;
+    line-height: 45px;
+    background-repeat: no-repeat;
+    font-size: 1.625rem;
+    color: #000;
+}
+
+main .content02 section .content02_g1 fieldset ul li input:checked + label {
+    display: inline-block;
+    padding-left: 65px;
+    background-size: 45px;
+    line-height: 45px;
+    background-image: url(../images/check_btn.png);
+}
+
+main .content02 section .content02_g1 fieldset ul li button {
+    border: none;
+    border-radius: 50px;
+    padding: 5px 50px;
+    font-size: 1.625rem;
+    background-color: #e9ecef;
+    color: #000;
+}
+
+main .content02 section .content02_g2 .txt_g {
+    display: flex;
+    height: 290px;
+    margin-bottom: 25px;
+}
+
+main .content02 section .content02_g2 .txt_g .txt_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 256px;
+    border-radius: 30px 0 0 30px;
+    background-color: #2AC1BC;
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+main .content02 section .content02_g2 .txt_g .txt_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 465px;
+    border-radius: 0 30px 30px 0;
+    background-color: #e9ecef;
+    font-size: 3.438rem;
+    font-weight: 700;
+    color: #2AC1BC;
+}
+
+main .content02 section .content02_g2 > p {
+    font-size: 1.25rem;
+    text-align: right;
+}
+/* ----- content01 End ----- */
+
+/* ----- content03 Start ----- */
+main .content03 {padding-top: 70px;}
+main .content03 section h3 {
+    padding-bottom: 100px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 2.688rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+main .content03 section ul {
+    padding-bottom: 111px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .content03 section ul li h4 {
+    margin-bottom: 15px;
+    font-size: 1.625rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+main .content03 section ul li p {
+    font-size: 1.25rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.3;
+}
+
+main .content03 section > p {text-align: center;}
