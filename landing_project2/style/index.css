@@ -6,19 +6,37 @@ main .bg_type1 section, main .bg_type2 section {
     width: 1250px;
 }
 
-
+main .app_download_btn {
+    display: inline-block;
+    font-size: 2.688rem;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+main .app_download_btn.btn_type_01::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/download_arrow.png);
+    width: 40px;
+    height: 36px;
+}
+main .app_download_btn.btn_type_02::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/download_arrow_white.svg);
+    width: 40px;
+    height: 36px;
+}
 /* ----- content01 Start----- */
 main .content01 {padding: 45px 0;}
 main .content01 section h1 {
     margin-bottom: 105px;
     text-align: center;
 }
-
 main .content01 section .main_list {
     display: flex;
     justify-content: space-between;
 }
-
 main .content01 section .main_list li {flex: 1;}
 main .content01 section .main_list .main_list_g01 h2{
     margin-bottom: 65px;
@@ -27,28 +45,19 @@ main .content01 section .main_list .main_list_g01 h2{
     color: #fff;
     line-height: 1.3;
 }
-
 main .content01 section .main_list .main_list_g01 a {
-    display: inline-block;
-    font-size: 2.688rem;
-    font-weight: 700;
     color: #2AC1BC;
-    padding: 10px 30px;
     background-color: #fff;
-    border-radius: 50px;
 }
-
-main .content01 section .main_list .main_list_g01 a::after {
+/* main .content01 section .main_list .main_list_g01 a::after {
     content: '';
     display: inline-block;
     background-image: url(../images/download_arrow.png);
     width: 40px;
     height: 36px;
-}
-
+} */
 main .content01 section .main_list .main_list_g02 {text-align: right;}
 /* ----- content01 End ----- */
-
 /* ----- content02 Start ----- */
 main .content02 {padding: 70px 0;}
 main .content02 section h3 {
@@ -58,16 +67,13 @@ main .content02 section h3 {
     font-weight: 500;
     color: #2AC1BC;
 }
-
 main .content02 section > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 main .content02 section .content02_g1,
 main .content02 section .content02_g2 {flex: 1;}
-
 main .content02 section .content02_g1 fieldset ul li {margin-bottom: 30px;}
 main .content02 section .content02_g1 fieldset ul li:last-child {margin:0; text-align: center;}
 main .content02 section .content02_g1 fieldset ul li input {display: none;}
@@ -81,7 +87,6 @@ main .content02 section .content02_g1 fieldset ul li input + label {
     font-size: 1.625rem;
     color: #000;
 }
-
 main .content02 section .content02_g1 fieldset ul li input:checked + label {
     display: inline-block;
     padding-left: 65px;
@@ -89,7 +94,6 @@ main .content02 section .content02_g1 fieldset ul li input:checked + label {
     line-height: 45px;
     background-image: url(../images/check_btn.png);
 }
-
 main .content02 section .content02_g1 fieldset ul li button {
     border: none;
     border-radius: 50px;
@@ -98,13 +102,11 @@ main .content02 section .content02_g1 fieldset ul li button {
     background-color: #e9ecef;
     color: #000;
 }
-
 main .content02 section .content02_g2 .txt_g {
     display: flex;
     height: 290px;
     margin-bottom: 25px;
 }
-
 main .content02 section .content02_g2 .txt_g .txt_left {
     display: flex;
     justify-content: center;
@@ -117,7 +119,6 @@ main .content02 section .content02_g2 .txt_g .txt_left {
     font-size: 1.625rem;
     font-weight: 700;
 }
-
 main .content02 section .content02_g2 .txt_g .txt_right {
     display: flex;
     justify-content: center;
@@ -129,16 +130,52 @@ main .content02 section .content02_g2 .txt_g .txt_right {
     font-weight: 700;
     color: #2AC1BC;
 }
-
 main .content02 section .content02_g2 > p {
     font-size: 1.25rem;
     text-align: right;
 }
-/* ----- content01 End ----- */
-
+/* ----- content02 End ----- */
 /* ----- content03 Start ----- */
-main .content03 {padding-top: 70px;}
+main .content03 {padding: 100px 0 184px;}
 main .content03 section h3 {
+    margin-bottom: 100px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 2.688rem;
+    font-weight: 700;
+    color: #fff;
+}
+main .content03 section p {text-align: center;}
+/* ----- content03 End ----- */
+/* ----- content04 Start ----- */
+main .content04 {padding-top: 100px;}
+main .content04 section h3 {
+    margin-bottom: 50px;
+    font-size: 2.688rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+main .content04 section > p {
+    margin-bottom: 50px;
+    font-size: 1.625rem;
+    line-height: 1.3;
+}
+main .content04 section > p span {color: #2AC1BC;}
+main .content04 section ul {font-size: 1.625rem;}
+main .content04 section ul li {line-height: 1.7;}
+main .content04 section ul li:last-child {margin-top: 102px; text-align: center;}
+main .content04 section ul li .app_download_btn {
+    background-color: #2AC1BC;
+    color: #fff;
+}
+main .content04 section .content04_g1 {
+    display: flex;
+    justify-content: space-between;
+}
+/* ----- content04 End ----- */
+/* ----- content05 Start ----- */
+main .content05 {padding-top: 70px;}
+main .content05 section h3 {
     padding-bottom: 100px;
     text-align: center;
     line-height: 1.3;
@@ -146,26 +183,28 @@ main .content03 section h3 {
     font-weight: 700;
     color: #fff;
 }
-
-main .content03 section ul {
+main .content05 section ul {
     padding-bottom: 111px;
     display: flex;
     justify-content: space-between;
 }
-
-main .content03 section ul li h4 {
+main .content05 section ul li {
+    padding: 20px;
+    width: 404px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+main .content05 section ul li h4 {
     margin-bottom: 15px;
     font-size: 1.625rem;
     font-weight: 500;
-    color: #fff;
+    color: #2AC1BC;
     text-align: center;
 }
-
-main .content03 section ul li p {
+main .content05 section ul li p {
     font-size: 1.25rem;
-    color: #fff;
+    color: #2AC1BC;
     text-align: center;
     line-height: 1.3;
 }
-
-main .content03 section > p {text-align: center;}
+main .content05 section > p {text-align: center;}

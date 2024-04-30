@@ -1,6 +1,27 @@
-/* 배경 공통&개별값 */
+/* 배경 공통&개별값 + 공통제목 */
 main {}
 
+main .bg .sub_title {
+    font-size: 3.438rem;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.3;
+}
+main .bg .title_txt {
+    text-align: center;
+    color: #fff;
+    font-size: 4.375rem;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    line-height: 1.2;
+    
+}
+main .bg section h3 em {
+    background-color: #fff;
+    color: #2E3148;
+    font-weight: 500;
+}
 main section .sponsor_btn::after,
 main article .sponsor_btn::after {
     content: '';
@@ -10,7 +31,6 @@ main article .sponsor_btn::after {
     width: 32px;
     height: 32px;
 }
-
 main section .sponsor_btn,
 main article .sponsor_btn {
     display: flex;
@@ -30,45 +50,68 @@ main article .sponsor_btn {
     요소 추가 배경이미지 꾸미기를 원한다면 가상선택자(before, after)를 활용하는것을 권장한다. 
     */
 }
-
 main .bg {
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    /* bg cover란? 배경이미지가 적용된 요소의 크기에 자동으로 가로세로 크기를 맞춰 채운다는 뜻 */
 }
-
 main .bg > section,
-main .bg > article {
+main .bg > article,
+main .bg > footer {
     width: 1250px;
     margin: 0 auto;
 }
-
 main .content01 {
     height: 1002px;
     background-image: url(../images/bg.jpg);
 }
-
 main .content02 {
     background-image: url(../images/bg_2.jpg);
 }
-
 main .content03 {
-    padding: 113px 0;
+    padding: 149px 0;
     background-image: url(../images/bg_3.jpg);
 }
-
 main .content04 {
-    padding: 117px 0;
+    padding: 117px 0 116px;
     background-image: url(../images/bg_4.jpg);
 }
-
 main .content05 {
     padding: 226px 0;
     background-image: url(../images/bg_5.jpg);
 }
-
+main .content06 {
+    padding: 111px 0 115px;
+    background-image: url(../images/bg_6.jpg);
+}
+main .content07 {
+    padding: 141px 0;
+    background-image: url(../images/bg_7.jpg);
+}
+main .content08 {
+    padding: 96px 0 224px;
+    background-image: url(../images/bg_8.jpg);
+}
+main .content09 {
+    padding: 113px 0 116px;
+    background-image: url(../images/bg_9.jpg);
+}
+main .content10 {
+    padding: 92px 0 407px;
+    background-image: url(../images/bg_10.jpg);
+}
+main .content11 {
+    padding: 194px 0 193px;
+    background-image: url(../images/bg_8.jpg);
+}
+main .content12 {
+    padding: 103px 0;
+    background-color: #050505;
+    color: #fff;
+}
 /* ---------- 1. 표지 ----------*/
 main .content01 section {overflow: hidden;}
-
 main .content01 section h1 {margin-bottom: 141px;}
 main .content01 section h1 a {}
 main .content01 section h1 a img {}
@@ -80,7 +123,6 @@ main .content01 section h2 {
     letter-spacing: -0.2px;
     line-height: 1.2;
 }
-
 main .content01 section h2 span {font-weight: 700;}
 main .content01 section .question_btn::before {
     content: '';
@@ -92,7 +134,6 @@ main .content01 section .question_btn::before {
     width: 24px;
     height: 24px;
 }
-
 main .content01 section .question_btn::after {
     content: '';
     display: inline-block;
@@ -103,7 +144,6 @@ main .content01 section .question_btn::after {
     width: 24px;
     height: 24px;
 }
-
 main .content01 section .question_btn {
     display: flex;
     align-items: center;
@@ -116,23 +156,18 @@ main .content01 section .question_btn {
     background-color: #050505;
     border-radius: 50px;
 }
-
 /* ---------- 2. 퀴즈 ----------*/
 /* left content02_g01 */
 main .content02 article > * {flex: 1;/* width: 50%; */}
-
 main .content02 article {
     display: flex;
     align-items: center;
 }
-
 main .content02 article .content02_g01 {padding: 38px 0;}
-
 main .content02 article form fieldset {
     width: 450px;
     text-align: center;
 }
-
 main .content02 article .content02_g01 fieldset h3 {
     margin-bottom: 17px;
     text-align: center;
@@ -141,24 +176,20 @@ main .content02 article .content02_g01 fieldset h3 {
     color: #fff;
     letter-spacing: -0.1px;
 }
-
 main .content02 article .content02_g01 fieldset h3+p {
     margin-bottom: 30px;
     font-size: 1.25rem;
     line-height: 1.7;
     color: #fff;
 }
-
 main .content02 article .content02_g01 fieldset .quiz_list {
     margin-bottom: 34px; 
     padding: 0 30px 0;
 }
-
 main .content02 article .content02_g01 fieldset .quiz_list li {
     margin-bottom: 34px;
     text-align: left;
 }
-
 main .content02 article .content02_g01 fieldset .quiz_list li:last-child{margin: 0;}
 main .content02 article .content02_g01 fieldset .quiz_list li input {display: none;}
 main .content02 article .content02_g01 fieldset .quiz_list li input:checked + label {
@@ -171,7 +202,6 @@ main .content02 article .content02_g01 fieldset .quiz_list li input:checked + la
     /* height: 28px; */
     line-height: 28px;
 }
-
 main .content02 article .content02_g01 fieldset .quiz_list li input + label {
     display: inline-block;
     padding-left: 48px;
@@ -184,7 +214,6 @@ main .content02 article .content02_g01 fieldset .quiz_list li input + label {
     font-size: 1.25rem;
     color: #fff;
 }
-
 main .content02 article .content02_g01 p button {
     width: 450px;
     height: 40px;
@@ -194,7 +223,6 @@ main .content02 article .content02_g01 p button {
     border-radius: 50px;
     color: #fff;
 }
-
 /* right content02_g02 */
 main .content02 article .content02_g02 {}
 main .content02 article .content02_g02 .total_box{
@@ -203,7 +231,6 @@ main .content02 article .content02_g02 .total_box{
     flex-direction: column;
     align-items: flex-end;
 }
-
 main .content02 article .content02_g02 .total_box .total_box_head {
     display: flex;
     align-items: center;
@@ -216,7 +243,6 @@ main .content02 article .content02_g02 .total_box .total_box_head {
     font-size: 1.625rem;
     font-weight: 700
 }
-
 main .content02 article .content02_g02 .total_box .total_box_head::before {
     content: '';
     display: inline-block;
@@ -225,7 +251,6 @@ main .content02 article .content02_g02 .total_box .total_box_head::before {
     width: 32px;
     height: 32px;
 }
-
 main .content02 article .content02_g02 .total_box .total_box_body {
     display: flex;
     justify-content: center;
@@ -237,7 +262,6 @@ main .content02 article .content02_g02 .total_box .total_box_body {
     font-size: 2.125rem;
     color: #FF7300;
 }
-
 main .content02 article .content02_g02 .total_box .total_box_body .total_box_body_txt{font-weight: 700;}
 main .content02 article .content02_g02 .total_box .total_box_body .total_box_body_txt .total_box_body_fc {font-size: 3.438rem;font-weight: 700;}
 main .content02 article .content02_g02 .total_box .total_box_body .total_box_body_txt .total_box_body_fcb {color: #000;font-weight: 700;}
@@ -255,28 +279,19 @@ main .content03 section h3{
     letter-spacing: -0.1px;
     line-height: 1.2;
 }
-
 main .content03 section p {
     margin-bottom: 70px;
     text-align: center;
 }
-
 /* ---------- 4. 50퍼 감소 ----------*/
 main .content04 section h3 {
     margin-bottom: 70px;
     font-size: 3.438rem;
     font-weight: 500;
     letter-spacing: -0.1px;
-    line-height: 1.2;
+    line-height: 1.3;
     color: #fff;
 }
-
-main .content04 section h3 em {
-    background-color: #fff;
-    color: #2E3148;
-    font-weight: 500;
-}
-
 main .content04 section .txt {
     margin-bottom: 70px;
     font-weight: 500;
@@ -284,7 +299,6 @@ main .content04 section .txt {
     font-size: 1.625rem;
     color: #fff;
 }
-
 /* ---------- 5. 빙하 ----------*/
 main .content05 section > * {text-align: center;}
 main .content05 section > h3 {
@@ -293,9 +307,182 @@ main .content05 section > h3 {
     font-weight: 500;
     line-height: 1.2;
 }
-
 main .content05 section h3+p {
     margin-bottom: 127px;
     font-size: 1.625rem;
     line-height: 1.2;
 }
+main .content05 section ul {
+    display: flex;
+    justify-content: space-between;
+}
+main .content05 section ul li {
+    flex: 1;
+    margin-right: 45px;
+}
+main .content05 section ul li:last-child {margin: 0;}
+main .content05 section ul li div div{
+    padding: 40px 0;
+    height: 320px;
+}
+main .content05 section ul li .list_g01{background-image: url(../images/box_img1.jpg);}
+main .content05 section ul li .list_g02{background-image: url(../images/box_img2.jpg);}
+main .content05 section ul li .list_g03{background-image: url(../images/box_img3.jpg);}
+main .content05 section ul li div h4 {
+    margin-bottom: 20px;
+    font-size: 2.688rem;
+    color: #fff;
+    font-weight: 700;
+}
+main .content05 section ul li div div p {
+    font-size: 1.625rem;
+    color: #fff;
+}
+main .content05 section ul li div div+p{
+    padding: 10px 18.5px;
+    height: 250px;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    background-color: #fff;
+}
+/* ---------- 6. 위기 ----------*/
+main .content06 section h3 {margin-bottom: 70px;}
+main .content06 section .txt {
+    margin-bottom: 70px;
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #fff;
+}
+/* ---------- 7. WWF ----------*/
+main .content07 section h3 {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 3.438rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+main .content07 section p {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 1.625rem;
+    line-height: 1.5;
+}
+main .content07 section p:last-child {margin: 0;}
+/* ---------- 8. 활동 ----------*/
+main .content08 section h3 {
+    margin-bottom: 113px;
+    text-align: center;
+    font-size: 3.438rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+main .content08 section ul {
+    display: flex;
+    justify-content: space-between;
+}
+main .content08 section ul li .list_g01 {background-image: url(../images/wwf_img1.jpg); margin-bottom: 40px;}
+main .content08 section ul li .list_g02 {background-image: url(../images/wwf_img2.jpg);}
+main .content08 section ul li .list_g03 {
+    background-image: url(../images/wwf_img3.jpg);
+    width: 605px;
+    height: 560px;
+}
+main .content08 section ul li > div {
+    width: 605px;
+    height: 260px;
+}
+main .content08 section ul li > div .txt_g {
+    margin-top: 100px;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #2E3148;
+    opacity: 0.8;
+}
+main .content08 section ul li > div.list_g03 .txt_g {margin-top: 409px;}
+main .content08 section ul li > div .txt_g p {
+    margin-bottom: 10px;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+}
+main .content08 section ul li > div .txt_g p:last-child {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+/* ---------- 9. 선물 ----------*/
+main .content09 section {overflow: hidden;}
+main .content09 section .content09_g01 {
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .content09 section .content09_g01 h3{
+    font-size: 2.688rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+}
+main .content09 section .content09_g01 a {margin: 0;}
+main .content09 section ul {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+main .content09 section ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .content09 section ul li p {
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.7;
+    color: #fff;
+}
+main .content09 section ul li p:last-of-type {margin: 0;}
+main .content09 section > p {
+    float: right;
+    font-size: 1.25rem;
+    color: #2E3148;
+    line-height: 1.7;
+    background-color: #fff;
+}
+/* ---------- 10. 지키다 ----------*/
+main .content10 section h3 {margin-bottom: 40px;}
+main .content10 section p {
+    margin-bottom: 70px;
+    font-size: 2.688rem;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+}
+main .content10 section a {margin-bottom: 0;}
+/* ---------- 11. 결제안내 ----------*/
+main .content11 section h3 {
+    margin-bottom: 20px;
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+main .content11 section ul li {
+    font-size: 1.625rem;
+    line-height: 1.8;
+}
+/* ---------- 12. 푸터 ----------*/
+main .content12 footer ul {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .content12 footer ul li a {margin-right: 25px;}
+main .content12 footer ul li a:last-child {margin:0}
+main .content12 footer address {line-height: 1.7;}
