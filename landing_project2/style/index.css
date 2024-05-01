@@ -10,7 +10,7 @@ main .app_download_btn {
     display: inline-block;
     font-size: 2.688rem;
     font-weight: 700;
-    padding: 10px 30px;
+    padding: 20px 30px;
     border-radius: 50px;
 }
 main .app_download_btn.btn_type_01::after {
@@ -186,13 +186,18 @@ main .content05 section h3 {
 main .content05 section ul {
     padding-bottom: 111px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 main .content05 section ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    width: 404px;
+    width: 300px;
+    height: 300px;
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 50%;
 }
 main .content05 section ul li h4 {
     margin-bottom: 15px;
