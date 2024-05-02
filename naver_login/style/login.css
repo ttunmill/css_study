@@ -1,0 +1,105 @@
+#app {
+    width: 375px;
+    height: 812px;
+    margin: 30px auto;
+    padding-top: 42px; /* status bar 공간 */
+    border: 1px solid black; /* 경계구분용 */
+}
+/* ========= top, logo */
+#app .top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+    padding: 0 16px;
+    height: 56px;
+    border: 1px solid black; /* 경계구분용 */
+}
+#app .top .prev{display: flex;}
+#app .top .prev img {
+    width: 24px;
+    height: 24px;
+    background-color: gray;
+}
+#app h1 {margin-bottom: 30px;}
+#app h1 a {
+    display: flex;
+    justify-content: center;
+}
+#app h1 a img {
+    width: 100px;
+    height: 50px;
+    background-color: gray;
+}
+#app .keyboard_g {
+    padding: 0 16px 16px;
+    border: 1px solid black; /* 경계구분용 */
+}
+#app .keyboard_g a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.75rem;
+}
+#app .keyboard_g a img {
+    margin-left: 6px;
+    width: 16px;
+    height: 16px;
+    background-color: gray;
+}
+/* ========= form */
+#app #login_frm {
+    padding: 0 16px;
+}
+#app #login_frm .login_g {}
+#app #login_frm .login_g ul {margin-bottom: 16px;}
+#app #login_frm .login_g ul li {}
+#app #login_frm .login_g ul li input[name^=user] {
+    padding: 16px;
+    padding-left: 56px;
+    width: 100%;
+    outline: none;
+    border: 1px solid black; /* 경계구분용 */
+}
+#app #login_frm .login_g ul li input[name$=id] {
+    border-radius: 5px 5px 0 0;
+}
+#app #login_frm .login_g ul li input[name$=pwd] {
+    border-radius: 0 0 5px 5px;
+}
+#app #login_frm .login_g .btn {margin-bottom: 34px;}
+#app #login_frm .login_g .btn #login_btn {
+    padding: 16px;
+    width: 100%;
+    font-size: 0.75rem;
+    border-radius: 5px;
+    background-color: gray;
+    /* input과 button은 inline 요소지만 css에서 크기를 인식한다. */
+    /* button 안쪽 글자는 기본 정렬이 가운데이다! */
+}
+/* ========= 로그인 오류시 출력 메세지(default = 숨김상태) */
+#app #login_frm .login_g .error_message {
+    display: none;
+    margin-bottom: 16px;
+    color: red;
+}
+/* ========= search, sign up */
+#app .search_join {
+    display: flex;
+    justify-content: center;
+}
+#app .search_join a {
+    font-size: 0.75rem;
+}
+#app .search_join a::after {
+    display: inline-block;
+    content: '';
+    margin: 0 8px;
+    width: 1px;
+    height: 10px;
+    background-color: black;
+}
+#app .search_join a:last-child::after {
+    display: none;
+    content: '';
+    padding: 0;
+}

@@ -1,0 +1,133 @@
+#app {
+    width: 375px;
+    height: 812px; /* 와이어프레임 기준 임시높이값 */
+    border: 1px solid black; /* 경계 구분용 */
+    margin: 30px auto 0;
+    padding-top: 42px;
+}
+.mb0 {margin-bottom: 0 !important;}
+/* ========= header */
+#app header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 56px;
+    border: 1px solid black; /* 경계 구분용 */
+}
+#app header h1 {font-size: 1.25rem;}
+#app header .right {display: flex;}
+#app header .right a{
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    background-color: gray;
+}
+#app header .right a:last-child {margin: 0;}
+/* ========= main */
+#app main .top_ad {
+    margin-bottom: 33px;
+    height: 90px;
+    background-color: gray;
+}
+#app main .login_service {margin-bottom: 23px;}
+#app main .login_service h2 {
+    margin-bottom: 12px;
+    padding: 0 16px;
+}
+#app main .login_service h2 em {font-weight: 700;}
+#app main .login_service ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 16px;
+}
+#app main .login_service ul li {
+    margin-bottom: 10px;
+    padding: 0 12px;
+    /* width: 85px; */
+    width: calc(100% / 4);
+}
+#app main .login_service ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 0.75rem;
+}
+#app main .login_service ul li a img {
+    margin-bottom: 5px;
+    width: 36px;
+    height: 36px;
+    background-color: gray;
+}
+#app main .mid_ad {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    padding: 10px 16px;
+    font-size: 0.75rem;
+    border: 1px solid black; /* 경계 구분용 */
+}
+#app main .mid_ad a {
+    display: flex;
+    align-items: center;
+}
+#app main .mid_ad img {
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+    background-color: gray;
+}
+#app main .btm_ad {
+    margin-bottom: 37px;
+    height: 107px;
+    background-color: gray;
+}
+#app main .service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 10px 16px;
+    border: 1px solid black; /* 경계 구분용 */
+}
+#app main .service a {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+}
+#app main .service a img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    background-color: gray;
+}
+#app main .service_txt {
+    margin-bottom: 12px;
+    padding: 10px 16px;
+    font-size: 0.75rem;
+    border: 1px solid black; /* 경계 구분용 */
+}
+#app main .new_service {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 16px;
+}
+#app main .new_service li {
+    margin-bottom: 16px;
+    /* width: 170px; */
+    width: calc(100% / 2);
+}
+#app main .new_service li a {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+
+}
+#app main .new_service li a img {
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    background-color: gray;
+}

@@ -1,0 +1,102 @@
+#app {
+    width: 375px;
+    height: 812px; /* 와이어프레임 기준 임시높이값 */
+    border: 1px solid black; /* 경계 구분용 */
+    margin: 30px auto 0;
+    padding-top: 42px;
+    /* nav 하단 고정 필요 속성 */
+    position: relative;
+}
+/* === 공통 레이아웃 === */
+#app header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 56px;
+    border: 1px solid black; /* 경계 구분용 */
+}
+#app main {
+    padding-top: 140px;
+    height: 659px;
+    overflow-y: auto;
+}
+#app main::-webkit-scrollbar {display: none;}
+#app nav {
+    display: flex;
+    padding: 0 16px;
+    height: 56px;
+    border: 1px solid black; /* 경계 구분용 */
+    /* 위치 하단 고정 */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* ======= header */
+#app header a {width: 24px; height: 24px; background-color: gray;}
+#app header .left {display: flex;}
+#app header .left a {margin-right: 16px;}
+#app header .left a:last-child {margin: 0;}
+#app header .left .all_nav {}
+#app header .left .pay {}
+#app header .right {display: flex;}
+#app header .right a {margin-left: 16px;}
+#app header .right a:first-child {margin: 0;}
+#app header .right .chat {}
+#app header .right .alram {}
+#app header .right .my_page {}
+/* ======= main */
+/* ======= main = search Form */
+#app main #search_frm {padding: 0 16px;}
+#app main #search_frm .search_g {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 24px;
+    border: 1px solid black; /* 경계 구분용 */
+    border-radius: 171px;
+}
+#app main #search_frm .search_g > img[alt=logo] {width: 24px; height: 24px;}
+#app main #search_frm .search_g > input[name^=search] {border: 0; outline: none;}
+#app main #search_frm .search_g > #search_btn {overflow: hidden; width: 24px; height: 24px;}
+#app main #search_frm .search_g > #search_btn img {}
+/* ======= main = ad, blog, weather */
+#app main .adver {}
+#app main .adver1 {
+    margin: 17px 16px 143px;
+    background-color: gray;
+    height: 16px;
+}
+#app main .adver2 {
+    background-color: gray;
+    height: 109px;
+    margin: 0 16px 8px;
+}
+#app main .weather_g {
+    display: flex;
+    margin: 0 16px 8px;
+}
+#app main .weather_g li {
+    flex: 1;
+    background-color: gray;
+    height: 66px;
+}
+#app main .weather_g li:first-child {margin-right: 10.5px;}
+#app main .blog_g {
+    margin: 0 16px;
+    background-color: gray;
+    height: 183px;
+}
+/* ======= nav */
+#app nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border: 1px solid black; /* 경계 구분용 */
+}
+#app nav img {
+    width: 24px; height: 24px; background-color: gray;
+}
+#app nav span {}
