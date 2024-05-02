@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position │ css</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <style>
+        #all {
+            position: relative;
+            background-color: gray;
+            width: 500px;
+            height: 700px;
+            margin: 30px auto;
+        }
+        #all .box {
+            width: 100px; 
+            height: 100px; 
+            padding: 10px;
+        }
+        #all .a {background-color: red;}
+        #all .b {
+            background-color: orange;
+            position: relative;
+            left: 100px;
+            top: 50px;
+        }
+        #all .c {background-color: yellow;}
+        #all .d {
+            background-color: green;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* absolute 설정 시 absolute 적용 요소의 부모에 position 추가 설정을 안하면 absolute 적용 요소는 body를 기준으로 위치가 설정된다. */
+        }
+        #all .e {background-color: blue;}
+        #all .f {
+            background-color: purple;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">
+            <div class="f">EF</div>
+        </div>
+    </div>
+</body>
+</html>
