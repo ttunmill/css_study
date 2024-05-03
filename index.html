@@ -17,15 +17,20 @@
         }
         .bg .lang {
             margin-bottom: 15px;
+            text-align: center;
             font-size: 1.875rem;
         }
         .bg h1 {
             margin-bottom: 15px;
+            text-align: center;
             font-size: 3.125rem;
             font-weight: bold;
             color: #fff;
         }
-        .bg .date {font-size: 1.563rem;}
+        .bg .date {
+            text-align: center;
+            font-size: 1.563rem;
+        }
         .list {
             display: flex;
             flex-flow: row wrap;
@@ -53,6 +58,22 @@
             right: 0;
             bottom: 0;
             position: absolute;
+        }
+        .dol_img img {
+            width: 20vw;
+        }
+        @media only screen and (max-width:1000px) {
+            .dol_img {position: unset;}
+            .dol_img img{  
+                display: block;
+                margin: 0 auto;
+                width: 20vw;
+                bottom: 0;
+            }
+        }
+        @media only screen and (max-width:629px) {
+            .list {width: 100%;}
+            .list a {width: 100%;}
         }
     </style>
 </head>
