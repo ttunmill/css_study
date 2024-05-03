@@ -280,5 +280,130 @@ main .content08 section p em {font-weight: 700;}
 /* ----- content08 End ----- */
 /* ----- content09 Start ----- */
 main .content09 {padding: 190px 0;}
-
+main .content09 section h3 {
+    margin-bottom: 85px;
+    font-size: 3.438rem;
+    font-weight: 700;
+    text-align: center;
+}
+main .content09 section .content09_g1 {margin-bottom: 371px;}
+main .content09 section .content09_g1 .g1_img {
+    margin-bottom: 36px;
+    text-align: center;
+}
+main .content09 section .content09_g1 .g1_txt {
+    margin-bottom: 50px;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+}
+main .content09 section .content09_g1 .g1_list {
+    display: flex;
+    justify-content: space-around;
+}
+main .content09 section .content09_g1 .g1_list p {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    background-color: #2AC1BC;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+}
+main .content09 section .content09_g2 .g2_img {
+    margin-bottom: 100px;
+    text-align: center;
+}
+main .content09 section .content09_g2 .g2_list {
+    display: flex;
+    justify-content: space-between;
+}
+main .content09 section .content09_g2 .g2_list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    background-color: #2AC1BC;
+    border-radius: 50%;
+    color: #fff;
+}
+main .content09 section .content09_g2 .g2_list li strong {
+    margin-bottom: 27px;
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+main .content09 section .content09_g2 .g2_list li p {
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
 /* ----- content09 End ----- */
+/* ----- content10 Start ----- */
+main .content10 {padding: 90px 0;}
+main .content10 section {text-align: center;}
+main .content10 section h3 {
+    margin-bottom: 113px;
+    font-size: 2.688rem;
+    font-weight: 700;
+    color: #fff;
+}
+main .content10 section p:first-of-type {
+    margin-bottom: 219px;
+    font-size: 2.125rem;
+    line-height: 1.3;
+    color: #fff;
+}
+main .content10 section .gift_img img {margin-left: 150px;}
+/* ----- content10 End ----- */
+/* ----- content11 Start ----- */
+main .content11 {padding: 193px 0 169px;}
+main .content11 section {text-align: center;}
+main .content11 section .char_img {margin-bottom: 45px;}
+main .content11 section .char_img img {
+    width: 328px;
+    height: 324px;
+}
+main .content11 section .txt {
+    margin-bottom: 121px;
+    font-size: 2.125rem;
+    line-height: 1.3;
+}
+main .content11 section .txt em {color: #2AC1BC;}
+main .content11 section .btn {
+    display: flex;
+    justify-content: center;
+}
+main .content11 section .btn .notice_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 467px;
+    padding: 10px 20px;
+    background-color: #2AC1BC;
+    border-radius: 50px;
+    font-size: 2.688rem;
+    color: #fff;
+}
+main .content11 section .btn .notice_btn::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/campaign.png);
+    width: 40px;
+    height: 40px;
+}
+main .content11 section .btn .notice_btn::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/arrow_forward.png);
+    width: 40px;
+    height: 40px;
+}
+
+/* ----- content11 End ----- */
