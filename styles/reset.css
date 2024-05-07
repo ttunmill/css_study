@@ -3,8 +3,8 @@
 body, html,
 h1,h2,h3,h4,h5,h6,
 p,ul,ol,li,dl,dt,dd,table,tr,td,th,thead,tbody,tfoot, 
-div, header,nav,aside,article,section,footer,figure,address,blockquote,video,iframe,hr
-span,em,strong,q,a,sub,sup,details,figcaption,summary,time,s,del,code,mark,img,fieldset{
+div, header,nav,aside,article,section,footer,figure,address,blockquote,video,iframe,hr,
+span,em,strong,q,a,sub,sup,details,figcaption,summary,time,s,del,code,mark,img,fieldset,input,button,select,textarea{
     font-size: 1.0em;
     font-weight: normal;
     font-size: normal;

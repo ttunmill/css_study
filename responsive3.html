@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰 상품 구현 반응형 웹</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* min ~ 1000px */
+        /* @media screen and (min-width:320px) {
+            #app {
+                margin: 0 auto;
+                background-color: aqua;
+                width: 100%;
+                min-width: 320px;
+                max-width: 1000px;
+            }
+            #app .product {
+                background-color: dodgerblue;
+                padding: 0 16px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+            #app .product .item {
+                margin-bottom: 20px;
+                background-color: crimson;
+                width: calc((100% / 2) - 10px);
+                height: 120px;
+            }
+        }
+        @media screen and (min-width:480px) {
+            #app .product .item {
+                width: calc((100% / 3) - 10px);
+            }
+        }
+        @media screen and (min-width:760px) {
+            #app .product .item {
+                width: calc((100% / 4) - 10px);
+            }
+        } */
+        /* =======max-width 연습 */
+        /* 1000px 이상일 때 */
+        #app {
+                margin: 0 auto;
+                background-color: aqua;
+                width: 100%;
+                min-width: 320px;
+                max-width: 1000px;
+            }
+            #app .product {
+                background-color: dodgerblue;
+                padding: 0 16px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+            #app .product .item {
+                margin-bottom: 20px;
+                background-color: crimson;
+                width: calc((100% / 4) - 10px);
+                height: 120px;
+            }
+        @media screen and (max-width:1000px) {
+            #app .product .item {
+                width: calc((100% / 4) - 10px);
+            } /* 1000px 이하일때 */
+        } /* 761~1000(max) */
+        @media screen and (max-width:760px) {
+            #app .product .item {
+                width: calc((100% / 3) - 10px);
+            }
+        } /* 481~760(max) */
+        @media screen and (max-width:480px) {
+            #app .product .item {
+                width: calc((100% / 2) - 10px);
+            }
+        }/* 320~480(max) */
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="product">
+            <a href="#" class="item">1</a>
+            <a href="#" class="item">2</a>
+            <a href="#" class="item">3</a>
+            <a href="#" class="item">4</a>
+            <a href="#" class="item">5</a>
+            <a href="#" class="item">6</a>
+            <a href="#" class="item">7</a>
+            <a href="#" class="item">8</a>
+            <a href="#" class="item">9</a>
+            <a href="#" class="item">10</a>
+            <a href="#" class="item">11</a>
+            <a href="#" class="item">12</a>
+        </div>
+    </div>
+</body>
+</html>
