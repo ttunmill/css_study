@@ -1,4 +1,5 @@
 /* 공통 */
+main {min-width: 1250px;}
 main .bg_type1 {background-color: #2AC1BC;}
 main .bg_type2 {background-color: #fff;}
 main .bg_type1 section, main .bg_type2 section {
