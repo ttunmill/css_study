@@ -50,7 +50,7 @@
             position: relative;
             height: 720px;
         }
-        /* main section video {width: 100%;} */
+        main section video {width: 100%;}
         main section .main_visual {
             width: 100%;
             position: absolute;
@@ -74,6 +74,15 @@
             line-height: 54px;
             border-radius: 10px;
         }
+        main section .main_visual a:hover {background: crimson;}
+        /* 반응형 웹 */
+        @media screen and (max-width:1300px) {
+            header nav {display: none;}
+            main section video {width: 1300px;}
+        }
+        @media screen and (max-width:760px) {
+            header h1 {width: 225px;}
+        }
     </style>
 </head>
 <body>
@@ -92,6 +101,7 @@
         </div>
     </header>
     <main>
+        <!-- 1. 동영상, 시작하기 -->
         <section>
             <video src="./images/bg.mp4" muted loop autoplay></video>
             <div class="main_visual">
@@ -99,6 +109,7 @@
                 <a href="#" class="start_btn">시작하기</a>
             </div>
         </section>
+        <!-- 2. 크리에이터 -->
     </main>
 </body>
 </html>

@@ -63,11 +63,12 @@ header .snb a:last-child:hover img {
 /* ==============main. 영상, 시작하기 버튼 위치 */
 main {}
 main section {
+    margin-bottom: 150px;
     position: relative;
     overflow: hidden;
     height: 720px;
 }
-/* main section video {width: 100%;} */
+main section video {width: 100%;}
 main section .main_visual {
     width: 100%;
     position: absolute;
@@ -96,3 +97,41 @@ main section .main_visual .start_link {
     color: #fff;
 }
 main section .main_visual .start_link:hover {border-radius: 20px;}
+/* ====================2. 크리에이터 */
+main .creater {
+    margin: 0 auto;
+    width: 1300px;
+}
+main .creater h3 {
+    margin-bottom: 55px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+main .creater .txt {
+    margin-bottom: 55px;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+main .creater .img {
+    margin: 0 auto 55px;
+    width: 697px;
+}
+main .creater .img img {width: 100%;}
+main .creater .creater_list {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    text-align: center;
+}
+main .creater .creater_list li {
+    width: calc(100% / 3);
+}
+main .creater .creater_list li .tit {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+main .creater .creater_list li .tit_txt {font-size: 1.25rem;}

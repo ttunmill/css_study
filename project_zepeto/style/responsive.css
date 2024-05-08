@@ -1,0 +1,20 @@
+/* 반응형웹 responsive.css */
+/* 기존 CSS에서 변경되는 사항만 작성한다. */
+/* media 조건 시작값 max 기준 사이트너비값 주로 이용 */
+@media screen and (max-width:1300px) {
+    header nav {display: none;}
+    main section video {width: 1300px;}
+    main .creater {width: 100%;}
+    main .creater .img {width: auto;}
+}/* ~1300 */
+@media screen and (max-width:760px) {
+    
+    header h1 {width: 225.75px;}
+    main .creater .creater_list li {
+        width: calc(100% / 2);
+    }
+    main .creater .creater_list li:last-child {
+        margin-top: 30px;
+        width: 100%;
+    }
+}/* ~760 */
