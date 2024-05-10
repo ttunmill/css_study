@@ -28,6 +28,18 @@ main .app_download_btn.btn_type_02::after {
     width: 40px;
     height: 36px;
 }
+/* advertline block start */
+.advert_line {
+    width: 400px;
+    margin: 0 auto;
+}
+.advert_line:last-of-type {width: 500px;}
+.advert_line img {
+    display: inline-block;
+    width: 100%;
+}
+
+/* advertline block end */
 /* ----- content01 Start----- */
 main .content01 {padding: 45px 0;}
 main .content01 section h1 {
@@ -60,7 +72,7 @@ main .content01 section .main_list .main_list_g01 a {
 main .content01 section .main_list .main_list_g02 {text-align: right;}
 /* ----- content01 End ----- */
 /* ----- content02 Start ----- */
-main .content02 {padding: 70px 0;}
+main .content02 {padding: 100px 0;}
 main .content02 section h3 {
     margin-bottom: 41px;
     text-align: center;
@@ -98,7 +110,7 @@ main .content02 section .content02_g1 fieldset ul li input:checked + label {
 main .content02 section .content02_g1 fieldset ul li button {
     border: none;
     border-radius: 50px;
-    padding: 5px 50px;
+    padding: 10px 50px;
     font-size: 1.625rem;
     background-color: #e9ecef;
     color: #000;
@@ -137,7 +149,7 @@ main .content02 section .content02_g2 > p {
 }
 /* ----- content02 End ----- */
 /* ----- content03 Start ----- */
-main .content03 {padding: 100px 0 184px;}
+main .content03 {padding: 100px 0;}
 main .content03 section h3 {
     margin-bottom: 100px;
     text-align: center;
@@ -146,7 +158,7 @@ main .content03 section h3 {
     font-weight: 700;
     color: #fff;
 }
-main .content03 section {background-image: url(../images/video_bg.jpg);}
+main .content03 section {}
 main .content03 section p {text-align: center;}
 /* ----- content03 End ----- */
 /* ----- content04 Start ----- */
@@ -176,7 +188,7 @@ main .content04 section .content04_g1 {
 }
 /* ----- content04 End ----- */
 /* ----- content05 Start ----- */
-main .content05 {padding-top: 70px;}
+main .content05 {padding-top: 100px;}
 main .content05 section h3 {
     padding-bottom: 100px;
     text-align: center;
@@ -215,7 +227,12 @@ main .content05 section ul li p {
     line-height: 1.3;
     height: 100px;
 }
-main .content05 section > p {text-align: center;}
+main .content05 section > p {
+    margin: 0 auto;
+    width: 400px;
+
+}
+main .content05 section > p  img {width: 100%;}
 /* ----- content05 End ----- */
 /* ----- content06 Start ----- */
 main .content06 {padding: 100px 0;}
@@ -244,7 +261,7 @@ main .content06 section div p {
 }
 /* ----- content06 End ----- */
 /* ----- content07 Start ----- */
-main .content07 {padding: 260px 0;}
+main .content07 {padding: 100px 0;}
 main .content07 section {
     display: flex;
     justify-content: space-between;
@@ -266,7 +283,7 @@ main .content07 section > p {margin-left: 135px;}
 main .content07 section img {width: 300px;}
 /* ----- content07 End ----- */
 /* ----- content08 Start ----- */
-main .content08 {padding: 140px 0;}
+main .content08 {padding: 100px 0;}
 main .content08 section {text-align: center;}
 main .content08 section h3 {
     margin-bottom: 104px;
@@ -284,13 +301,14 @@ main .content08 section p em {font-weight: 700;}
 /* ----- content08 End ----- */
 /* ----- content09 Start ----- */
 main .content09 {
-    background-image: url(../images/content09_bg2.jpg);
+    background-image: url(../images/content09_bg1.jpg);
     background-color: #cccccc;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
     height: 900px;
-    padding: 100px 0;
+    background-attachment: fixed;
+    padding: 100px 0 0;
 }
 main .content09 section h3 {
     margin-bottom: 85px;
@@ -332,6 +350,15 @@ main .content09 section .content09_g1 .g1_list p {
     text-align: center;
 }
 /* ------------2------------ */
+main .content09_02 {
+    background-image: url(../images/content09_bg2.jpg);
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 150px 0;
+}
 main .content09_02 section .content09_g2 .g2_img {
     margin-bottom: 100px;
     text-align: center;
@@ -352,18 +379,18 @@ main .content09_02 section .content09_g2 .g2_list li {
     border-radius: 50%;
     color: #fff;
 }
-main .content09 section .content09_g2 .g2_list li strong {
+main .content09_02 section .content09_g2 .g2_list li strong {
     margin-bottom: 27px;
     font-size: 1.625rem;
     font-weight: 700;
 }
-main .content09 section .content09_g2 .g2_list li p {
+main .content09_02 section .content09_g2 .g2_list li p {
     font-size: 1.25rem;
     line-height: 1.3;
 }
 /* ----- content09 End ----- */
 /* ----- content10 Start ----- */
-main .content10 {padding: 90px 0;}
+main .content10 {padding: 100px 0;}
 main .content10 section {text-align: center;}
 main .content10 section h3 {
     margin-bottom: 113px;
@@ -372,15 +399,15 @@ main .content10 section h3 {
     color: #fff;
 }
 main .content10 section p:first-of-type {
-    margin-bottom: 219px;
-    font-size: 2.125rem;
+    margin-bottom: 100px;
+    font-size: 1.75rem;
     line-height: 1.3;
     color: #fff;
 }
 main .content10 section .gift_img img {margin-left: 150px;}
 /* ----- content10 End ----- */
 /* ----- content11 Start ----- */
-main .content11 {padding: 193px 0 169px;}
+main .content11 {padding: 100px 0;}
 main .content11 section {text-align: center;}
 main .content11 section .char_img {margin-bottom: 45px;}
 main .content11 section .char_img img {
@@ -388,11 +415,14 @@ main .content11 section .char_img img {
     height: 324px;
 }
 main .content11 section .txt {
-    margin-bottom: 121px;
-    font-size: 2.125rem;
+    margin-bottom: 45px;
+    font-size: 1.75rem;
     line-height: 1.3;
 }
-main .content11 section .txt em {color: #2AC1BC;}
+main .content11 section .txt em {
+    color: #2AC1BC;
+    font-weight: 700;
+}
 main .content11 section .btn {
     display: flex;
     justify-content: center;
@@ -401,14 +431,15 @@ main .content11 section .btn .notice_btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 467px;
+    width: 400px;
     padding: 10px 20px;
     background-color: #2AC1BC;
     border-radius: 50px;
-    font-size: 2.688rem;
+    font-size: 2.125rem;
     color: #fff;
 }
 main .content11 section .btn .notice_btn::before {
+    margin-top: 5px;
     content: '';
     display: inline-block;
     background-image: url(../images/campaign.png);
@@ -416,6 +447,7 @@ main .content11 section .btn .notice_btn::before {
     height: 40px;
 }
 main .content11 section .btn .notice_btn::after {
+    margin-top: 5px;
     content: '';
     display: inline-block;
     background-image: url(../images/arrow_forward.png);
