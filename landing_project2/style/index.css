@@ -146,6 +146,7 @@ main .content03 section h3 {
     font-weight: 700;
     color: #fff;
 }
+main .content03 section {background-image: url(../images/video_bg.jpg);}
 main .content03 section p {text-align: center;}
 /* ----- content03 End ----- */
 /* ----- content04 Start ----- */
@@ -212,6 +213,7 @@ main .content05 section ul li p {
     color: #2AC1BC;
     text-align: center;
     line-height: 1.3;
+    height: 100px;
 }
 main .content05 section > p {text-align: center;}
 /* ----- content05 End ----- */
@@ -261,6 +263,7 @@ main .content07 section div p {
     line-height: 1.4;
 }
 main .content07 section > p {margin-left: 135px;}
+main .content07 section img {width: 300px;}
 /* ----- content07 End ----- */
 /* ----- content08 Start ----- */
 main .content08 {padding: 140px 0;}
@@ -280,14 +283,25 @@ main .content08 section p {
 main .content08 section p em {font-weight: 700;}
 /* ----- content08 End ----- */
 /* ----- content09 Start ----- */
-main .content09 {padding: 190px 0;}
+main .content09 {
+    background-image: url(../images/content09_bg2.jpg);
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    height: 900px;
+    padding: 100px 0;
+}
 main .content09 section h3 {
     margin-bottom: 85px;
     font-size: 3.438rem;
     font-weight: 700;
     text-align: center;
+    color: #fff;
 }
-main .content09 section .content09_g1 {margin-bottom: 371px;}
+main .content09 section .content09_g1 {
+    margin-bottom: 371px;
+}
 main .content09 section .content09_g1 .g1_img {
     margin-bottom: 36px;
     text-align: center;
@@ -298,6 +312,7 @@ main .content09 section .content09_g1 .g1_txt {
     font-weight: 700;
     line-height: 1.3;
     text-align: center;
+    color: #fff;
 }
 main .content09 section .content09_g1 .g1_list {
     display: flex;
@@ -316,15 +331,16 @@ main .content09 section .content09_g1 .g1_list p {
     color: #fff;
     text-align: center;
 }
-main .content09 section .content09_g2 .g2_img {
+/* ------------2------------ */
+main .content09_02 section .content09_g2 .g2_img {
     margin-bottom: 100px;
     text-align: center;
 }
-main .content09 section .content09_g2 .g2_list {
+main .content09_02 section .content09_g2 .g2_list {
     display: flex;
     justify-content: space-between;
 }
-main .content09 section .content09_g2 .g2_list li {
+main .content09_02 section .content09_g2 .g2_list li {
     display: flex;
     flex-direction: column;
     justify-content: center;
