@@ -1,4 +1,4 @@
-/* body {min-width: fit-content} */
+body {min-width: 360px;}
 header {
     /* figma 1920(full) 1920px(x) 100%(o) */
     /* width:100%;(기본값) */
@@ -135,3 +135,130 @@ main .creater .creater_list li .tit {
     font-weight: bold;
 }
 main .creater .creater_list li .tit_txt {font-size: 1.25rem;}
+/* ====================3. 제페토 세상 */
+main .world {
+    margin-top: 150px;
+    padding: 150px 0;
+    background-color: #f5f5f5;
+}
+main .world .lay1300 {
+    margin: 0 auto;
+    width: 1300px;
+    padding: 0 16px;
+    text-align: center;
+}
+main .world .lay1300 h3 {
+    margin-bottom: 50px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+main .world .lay1300 > p {
+    margin-bottom: 50px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+main .world .lay1300 .world_list {
+    display: flex;
+    justify-content: space-between;
+}
+main .world .lay1300 .world_list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc((100% / 3) - 20px);
+    height: 306px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+main .world .lay1300 .world_list li h4 {
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+main .world .lay1300 .world_list li .txt {
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+main .world .lay1300 .world_list li .world_btn {
+    margin: 0 auto;
+    display: inline-block;
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+    width: 109px;
+    line-height: 54px;
+    text-align: center;
+}
+/* ====================4. 3억명 */
+main .million {
+    margin: 0 auto;
+    padding: 150px 16px;
+    width: 1300px;
+    text-align: center;
+}
+main .million h3 {
+    margin-bottom: 50px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+main .million p {
+    margin-bottom: 50px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+main .million .million_list {
+    display: flex;
+    justify-content: space-between;
+}
+main .million .million_list li {
+    margin-right: 20px;
+    width: 240px;
+}
+main .million .million_list li:last-child {margin: 0;}
+main .million .million_list li img {width: 100%;}
+/* ====================5. footer */
+.f_bg {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+.f_bg footer {max-width: 1300px; margin: 0 auto;}
+.f_bg footer .f_top {
+    margin-bottom: 24px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.f_bg footer .f_top .f_menu a {margin-right: 24px;}
+.f_bg footer .f_top .f_menu a:last-child {margin: 0}
+.f_bg footer .f_top .lang_sns {
+    display: flex;
+    align-items: center;
+}
+.f_bg footer .f_top .lang_sns #lang_select {
+    -webkit-appearance:none; /* for chrome */
+    -moz-appearance:none; /*for firefox*/
+    appearance:none;
+    outline: none;
+
+    /* margin-right: 12px; */
+    padding: 0 10px;
+    width: 78px;
+    height: 25px;
+    background-image: url(../images/caret-down-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-size: 14px 14px;
+    border-radius: 5px;
+}
+.f_bg footer .f_top .lang_sns > a {margin-left: 12px;}
+.f_bg footer .f_top .lang_sns > a img {display: block;}
+/* font-awesome 전용속성값 */
+/* .fa {
+    font-weight: 600;
+    font-family: 
+    'Font Awesome 5 Free' , 
+    'Font Awesome 5 Brands' , 
+    'Font Awesome 5 Solid';
+} */
+/* .f_bg footer .f_top .lang_sns #lang_select::before {content: '\f0d7';} */

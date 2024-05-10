@@ -7,9 +7,13 @@
     main .creater {width: 100%;}
     /* main .creater .img {width: auto;} */
     main .creater .creater_list {flex-wrap: wrap;}
+    main .world .lay1300 {width: 100%;}
+    main .million {width: 100%;}
+    main .million .million_list li:last-child {display: none;}
+    main .million .million_list li:nth-of-type(4) {margin: 0;}
+    .f_bg footer {padding: 0 16px;}
 }/* ~1300 */
 @media screen and (max-width:760px) {
-    
     header h1 {width: 225.75px;}
     main .creater .creater_list li {
         width: calc(100% / 2);
@@ -19,4 +23,31 @@
         margin-top: 30px;
         width: 100%;
     }
+    main .world .lay1300 .world_list {
+        flex-direction: column;
+    }
+    main .world .lay1300 .world_list li {
+        margin-bottom: 10px;
+        padding: 0 50px;
+        width: 100%;
+        height: 150px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main .world .lay1300 .world_list li:last-child {margin:0}
+    main .world .lay1300 .world_list li h4,
+    main .world .lay1300 .world_list li .txt,
+    main .world .lay1300 .world_list li .world_btn {
+        margin: 0;
+    }
+    main .million h3 {font-size: 2.188rem;}
+    main .million p {font-size: 1rem;}
+    main .million .million_list li:nth-of-type(3) {margin: 0;}
+    main .million .million_list li:nth-of-type(4) {display: none;}
+    .f_bg footer .f_top {
+        flex-direction: column;
+        align-items: unset;
+    }
+    .f_bg footer .f_top .f_menu {margin-bottom: 10px;}
 }/* ~760 */
