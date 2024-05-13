@@ -50,21 +50,22 @@
             }
             #app .product {
                 background-color: dodgerblue;
-                padding: 0 16px;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-between;
             }
             #app .product .item {
-                margin-bottom: 20px;
+                margin-bottom: 50px;
                 background-color: crimson;
                 width: calc((100% / 4) - 10px);
-                height: 120px;
+                /* img~em 자식 정렬 flex */
+                display: flex;
+                flex-flow: column wrap;
+                overflow: hidden;
             }
         @media screen and (max-width:1000px) {
-            #app .product .item {
-                width: calc((100% / 4) - 10px);
-            } /* 1000px 이하일때 */
+            #app {padding: 0 16px;}
+            /* 1000px 이하일때 */
         } /* 761~1000(max) */
         @media screen and (max-width:760px) {
             #app .product .item {
@@ -76,12 +77,83 @@
                 width: calc((100% / 2) - 10px);
             }
         }/* 320~480(max) */
+        /* =======media 조건 시작 */
+        /* #app .product .item img {width: 100%;} */
+        #app .product .item em {
+            padding: 15px 0;
+            color: #fff;
+        }
+        #app .product .item span {
+            color: #fff
+        }
+        #app .product .item span del {}
+
     </style>
 </head>
 <body>
     <div id="app">
         <div class="product">
-            <a href="#" class="item">1</a>
+            <a href="#" class="item">
+                <img src="./images/box.jpg" alt="">
+                <em>상품명</em>
+                <span>12,000원<del>20,000원</del></span>
+            </a>
+            <a href="#" class="item">
+                <img src="./images/box.jpg" alt="">
+                <em>상품명</em>
+                <span>12,000원<del>20,000원</del></span>
+            </a>
+            <a href="#" class="item">
+                <img src="./images/box.jpg" alt="">
+                <em>상품명</em>
+                <span>12,000원<del>20,000원</del></span>
+            </a>
+            <a href="#" class="item">
+                <img src="./images/box.jpg" alt="">
+                <em>상품명</em>
+                <span>12,000원<del>20,000원</del></span>
+            </a>
+            <a href="#" class="item">
+                <img src="./images/box.jpg" alt="">
+                <em>상품명</em>
+                <span>12,000원<del>20,000원</del></span>
+            </a>
+            <a href="#" class="item">
+                <img src="./images/box.jpg" alt="">
+                <em>상품명</em>
+                <span>12,000원<del>20,000원</del></span>
+            </a>
+            <a href="#" class="item">
+                <img src="./images/box.jpg" alt="">
+                <em>상품명</em>
+                <span>12,000원<del>20,000원</del></span>
+            </a>
+            <a href="#" class="item">
+                <img src="./images/box.jpg" alt="">
+                <em>상품명</em>
+                <span>12,000원<del>20,000원</del></span>
+            </a>
+            <a href="#" class="item">
+                <img src="./images/box.jpg" alt="">
+                <em>상품명</em>
+                <span>12,000원<del>20,000원</del></span>
+            </a>
+            <a href="#" class="item">
+                <img src="./images/box.jpg" alt="">
+                <em>상품명</em>
+                <span>12,000원<del>20,000원</del></span>
+            </a>
+            <a href="#" class="item">
+                <img src="./images/box.jpg" alt="">
+                <em>상품명</em>
+                <span>12,000원<del>20,000원</del></span>
+            </a>
+            <a href="#" class="item">
+                <img src="./images/box.jpg" alt="">
+                <em>상품명</em>
+                <span>12,000원<del>20,000원</del></span>
+            </a>
+            <!-- <a href="#" class="item">1</a>
             <a href="#" class="item">2</a>
             <a href="#" class="item">3</a>
             <a href="#" class="item">4</a>
@@ -92,7 +164,7 @@
             <a href="#" class="item">9</a>
             <a href="#" class="item">10</a>
             <a href="#" class="item">11</a>
-            <a href="#" class="item">12</a>
+            <a href="#" class="item">12</a> -->
         </div>
     </div>
 </body>

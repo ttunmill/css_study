@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation │ css</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        button {
+            padding: 20px;
+            background-color:darkslategray;
+            color: #fff;
+            margin: 20px;
+            transition: background-color 0.3s;
+        }
+        #btn1:hover {
+            background-color: black;
+            /* hover이용 css속성값 변경 시 즉시변경 */
+            /* 자연스러운 전환 애니메이션을 원한다면?? */
+            /* transition: 애니메이션적용속성 지속시간 */
+            /* transition: background-color 0.3s; */
+            /* 올렸을 땐 자연스럽게 변환 성공! */
+            /* 마우스가 나가면 왜 다시 즉시변경될까?*/
+            /* (이유)=> transition을 hover 선택자에 썻으니까! */
+        }
+        #btn2 {width:100px; transition:width 0.2s;}
+        #btn2:hover {width: 200px;}
+        #btn3 {
+            position: relative; left: 0;
+            width: 150px; height: 70px;
+            background-color: blue;
+            transition: 
+                left 1s, 
+                width 0.5s 1s,
+                height 0.5s 0.5s,
+                background-color 2s;
+            /* transition: width 0.5s; */
+            /* transition: 애니메이션적용속성 지속시간 지연시간; */
+        }
+        #btn3:hover {
+            left: 20px;
+            width: 200px; height: 100px;
+            background-color: deeppink;
+            
+        }
+        #btn4 {
+            width: 700px;
+            height: 50px;
+            border-radius: 10px;
+            margin-bottom: 0px;
+            border: 0px solid black;
+            transition: 
+                width 1s 0.5s,
+                height 1s 1.5s,
+                border-radius 1s 1s,
+                margin-bottom 1s 1s,
+                border 1s 1s;
+        }
+        #btn4 span {
+            display: none;
+            transition: display 1s 1s;
+        }
+        #btn4:hover {
+            width: 1000px;
+            height: 1000px;
+            border-radius: 50%;
+            margin-bottom: 500px;
+            border: 5px solid red;
+        }
+        #btn4:hover span {
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>css animation</h1>
+    <button type="button" id="btn1">button</button>
+    <hr>
+    <button type="button" id="btn2">button2</button>
+    <hr>
+    <button type="button" id="btn3">button3</button>
+    <hr>
+    <button type="button" id="btn4"><span>ㅎㅇ요</span></button>
+</body>
+</html>
