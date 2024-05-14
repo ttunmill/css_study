@@ -34,13 +34,34 @@
             transform: scaleY(0.9);
             transition: transform 0.3s 0.5s;
         }
-        .box3 {}
-        .box4 {}
-        .box5 {}
-        .box6 {}
+        .box3 {
+            transform: rotate(-45deg);
+            transform-origin: right;
+            transition: transform 0.3s;
+        }
+        .box4 {
+            transform: skewX(40deg);
+            transition: transform 0.3s;
+        }
+        .box5 {
+            /* transform: translate(50px, 0); */
+            /* transform: translateX(200px); */
+            /* transform: translateY(-30px);
+            transition: transform 0.3s; */
+            /* position: relative;
+            top: -30px; */
+        }
+        .box6 {
+            transform: scaleY(0.8) rotate(10deg) translateX(50px) skew(-10deg);
+            transition: transform 0.3s;
+        }
+        .box6:hover {transform: scaleY(1) rotate(-10deg) translateX(20px) skew(0);}
 
         .box1:hover {transform: scale(1);}
         .box2:hover {transform: scaleY(2);}
+        .box3:hover {transform: rotate(0);}
+        .box4:hover {transform:skewX(10deg)}
+        .box5:hover {transform:translateY(0)}
     </style>
 </head>
 <body>
