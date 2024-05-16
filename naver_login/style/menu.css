@@ -36,7 +36,34 @@
     padding: 0 16px;
 }
 #app main .login_service h2 em {font-weight: 700;}
-#app main .login_service ul {
+#app main .login_service .category {
+    display: grid;
+    padding: 0 16px;
+    /* grid-template-areas: 
+    'li1 li2 li3 li4'
+    'li5 li6 li7 li8'; */
+    /* grid-template-columns: repeat(4, calc(100% / 4)); */
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(2, calc(100% / 2)); */
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+#app main .login_service .category a {
+    display: grid;
+    grid-gap: 5px;
+    justify-items: center;
+    background-color: bisque;    
+    font-size: 0.75rem;
+}
+/* #app main .login_service .category a:nth-child(1) {grid-area: li1;}
+#app main .login_service .category a:nth-child(2) {grid-area: li2;}
+#app main .login_service .category a:nth-child(3) {grid-area: li3;}
+#app main .login_service .category a:nth-child(4) {grid-area: li4;}
+#app main .login_service .category a:nth-child(5) {grid-area: li5;}
+#app main .login_service .category a:nth-child(6) {grid-area: li6;}
+#app main .login_service .category a:nth-child(7) {grid-area: li7;}
+#app main .login_service .category a:nth-child(8) {grid-area: li8;} */
+/* #app main .login_service ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -45,7 +72,7 @@
 #app main .login_service ul li {
     margin-bottom: 10px;
     padding: 0 12px;
-    /* width: 85px; */
+    width: 85px; 주석처리 부분
     width: calc(100% / 4);
 }
 #app main .login_service ul li a {
@@ -54,8 +81,8 @@
     align-items: center;
     text-align: center;
     font-size: 0.75rem;
-}
-#app main .login_service ul li a img {
+} */
+#app main .login_service .category a img {
     margin-bottom: 5px;
     width: 36px;
     height: 36px;

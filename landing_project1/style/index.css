@@ -382,6 +382,22 @@ main .content08 section ul {
     display: flex;
     justify-content: space-between;
 }
+main .content08 section ul li {
+    width: calc((100% - 40px) / 2);
+}
+main .content08 section ul li div[class^=list] {
+    position: relative;
+}
+main .content08 section ul li div .txt_g {
+    position: absolute;
+    /* absolute 설정 요소는 블록 요소여도 inline-block처럼 내용 크기만큼만 인식한다 */
+    /* absolute 설정 요소의 기본 너비 100%를 유지하고 싶다면 absolute는 inline-block처럼
+    너비를 내용만큼만 인식하니까 반드시 width:100%를 추가로 입력해서 적용해야 한다!! */
+    left: 0;
+    bottom: 20px;
+    padding: 15px 20px;
+    background-color: rgba(46, 49, 72, 0.8);
+}
 main .content08 section ul li .list_g01 {background-image: url(../images/wwf_img1.jpg); margin-bottom: 40px;}
 main .content08 section ul li .list_g02 {background-image: url(../images/wwf_img2.jpg);}
 main .content08 section ul li .list_g03 {
@@ -393,14 +409,19 @@ main .content08 section ul li > div {
     width: 605px;
     height: 260px;
 }
-main .content08 section ul li > div .txt_g {
+/* main .content08 section ul li .list_g01,
+main .content08 section ul li .list_g02,
+main .content08 section ul li .list_g03 {
+    position: relative;
+} */
+/* main .content08 section ul li > div .txt_g {
     margin-top: 100px;
     display: inline-block;
     padding: 15px 20px;
     background-color: #2E3148;
     opacity: 0.8;
-}
-main .content08 section ul li > div.list_g03 .txt_g {margin-top: 409px;}
+} */
+/* main .content08 section ul li > div.list_g03 .txt_g {margin-top: 409px;} */
 main .content08 section ul li > div .txt_g p {
     margin-bottom: 10px;
     font-size: 1.625rem;
