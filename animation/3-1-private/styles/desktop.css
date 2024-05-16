@@ -6,11 +6,15 @@ header {
     align-items:center; z-index:999;
     position:fixed; left:50%; top:0; margin-left:-700px;
 }
-header nav a {margin:0 7px;}
+header nav a {
+    margin:0 7px;
+    color: #fff
+}
 header .right a {
     position:relative; padding:5px 5px 5px 27px;
     border:1px dashed rgba(255,255,255,0.6); 
     font-size:0.875rem; border-radius:3px;
+    color: #fff;
 }
 header .right a::before {
     content:''; display:block;
@@ -28,7 +32,43 @@ main {
     margin: 0 auto;
     top: 80px;
     text-align: center;
+    z-index: 1;
 }
+main {}
+main::before, main::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    z-index: 20;
+}
+main::before {
+    left: 0;
+    background: linear-gradient(90deg, rgba(9,13,43,1), rgba(9,13,43, 0.5));
+}
+main::after {
+    right: 0;
+    background: linear-gradient(-90deg, rgba(9,13,43,1), rgba(9,13,43, 0.5));
+}
+/* main::after, main::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 38%;
+    z-index: 20;
+} */
+/* main::before {
+    left: 0;
+    background: linear-gradient(90deg, rgba(9,13,43,1) , rgba(255,0,0,0) 100%);
+}
+main::after {
+    right: 0;
+    background: linear-gradient(-90deg, rgba(9,13,43,1)  , rgba(255,0,0,0) 100%);
+} */
 main > * {max-width:1400px; margin:0 auto;}
 /* 중첩순서 처리 배경(10) 그라디언트(20) 나머지(30) */
 main .bg_wrap {position:absolute; z-index:10;}

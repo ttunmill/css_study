@@ -22,10 +22,20 @@
             display:flex; justify-content:space-between;
             flex-flow:column wrap;
         }
+        main section a .img {
+            height: 200px;
+            overflow: hidden;
+        }
         main section a .img img {width:100%; border-radius:3px;}
         main section a:hover .img img {}
         /* 상품 내용 디자인 상세 */
-        main a > span {font-size:0.91rem; letter-spacing:-0.5px; line-height:1.5;}
+        main a > span {
+            font-size:0.91rem; letter-spacing:-0.5px; line-height:1.5;
+            transition: filter 0.5s, transform 0.5s;
+        }
+        main a > span img {transition: transform 0.5s;}
+        main a > span:hover {filter:grayscale(100%);}
+        main a > span:hover img {transform: scale(1.1);}
         main a .name {padding:0 0 5px; margin:0 0 5px; border-bottom:1px solid #ccc;}
         main a .price {margin:0 0 5px;}
         main a .price del {color:#aaa;}

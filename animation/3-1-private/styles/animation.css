@@ -1,0 +1,20 @@
+main .bg_wrap .bg1{animation: bg 5s infinite linear;}
+main .bg_wrap .bg2{animation: bg 4s infinite linear;}
+main .bg_wrap .bg3{animation: bg 2s infinite linear;}
+main .car #left_tire, 
+main .car #right_tire {
+    animation: rotate 1s infinite linear;
+}
+main .scroll {animation: scroll 1s infinite alternate ease;}
+@keyframes scroll {
+    0% {transform: translateY(10px);}
+    100% {transform: translateY(-10px);}
+}
+@keyframes rotate {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(-360deg);}
+}
+@keyframes bg {
+    0% {background-position: 0%;}
+    100% {background-position: 100%;}
+}
