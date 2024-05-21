@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+* {
+    margin:0; padding:0;
+    font-size:1.0em; font-weight:400;
+    font-family:'Single Day';
+}
+main {
+    max-width:600px; 
+    margin:30px auto 0; padding:50px 0;
+    text-align:center;
+    border-radius:20px;
+    background:#ffe81a48;
+}
+main h1 {
+    font-size:3rem; padding:30px 0;
+}
+main p img {width:80%; border-radius:20px;}
+main .calc {margin:30px 0;}
+main .calc input {
+    border:0; margin:0 10px;
+    width:200px; height:50px;
+    outline:none; text-align:center;
+}
+main .result_wrap {
+    display:flex; flex-flow:column;
+    padding:0 60px;
+}
+main .result_wrap button {
+    color:#fff; background:#ff3939;
+    padding:20px 0; cursor:pointer;
+    border:0; border-radius:10px;
+}
+main .result_wrap #result {
+    margin:20px 0; text-align:center; outline:none;
+    font-size:2rem; border:1px solid #aaa;
+}
