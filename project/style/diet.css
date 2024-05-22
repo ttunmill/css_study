@@ -4,12 +4,20 @@
     margin: 0; padding: 0; line-height: 1.0;
     list-style: none; font-size: 1.0em;
 }
+body {
+    background-image: url("../images/diet_bg.avif");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: center;
+    height: 100vh;
+}
 main {
     position: absolute;
     left: 50%;
     top: 50%;
     width: 600px;
     padding: 100px 0;
+    background: #fff;
     transform: translate(-50%, -50%);
     border: 1px solid black;
     border-radius: 20px;
@@ -33,6 +41,7 @@ main ul {
 main ul li {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 20px;
     list-style: none;
@@ -55,7 +64,7 @@ main ul li:last-child input {
 main ul li span {
     display: block;
     text-align: right;
-    width: calc(100% / 3);
+    width: calc(100% / 5);
     padding-right: 10px;
 }
 main ul li input {
@@ -81,4 +90,9 @@ main ul+p button {
 main ul+p button:hover {
     background-color: #000;
     color: #fff;
+}
+@media screen and (max-width:600px) {
+    main {
+        width: 95%;
+    }
 }

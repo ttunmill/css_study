@@ -16,13 +16,13 @@ result_btn.addEventListener("click", function() {
     if(height.value == "" || weight.value == "") {
         goals.value = `값이 입력되지 않았습니다.`;
     } else if (weight.value >= total) {
-        goals.value = `적정체중은 ${total}kg이며 ${weight.value - total}kg 초과되셨습니다.`;
+        goals.value = `적정체중은 ${total}kg 이며 ${weight.value - total}kg 초과되셨습니다.`;
     } else {
-        goals.value = `축하합니다 적정체중입니다.`
+        goals.value = `축하합니다! 적정체중입니다.`
     }
     // if(weight.value >= total) {
-    //     goals.value = `적정체중은 ${total}kg이며 ${weight.value - total}kg 초과되셨습니다.`;
+    //     goals.value = `적정체중은 ${total}kg 이며 ${weight.value - total}kg 초과되셨습니다.`;
     // } else {
-    //     goals.value = `축하합니다 적정체중입니다.`
+    //     goals.value = `축하합니다! 적정체중입니다.`
     // }
 })
