@@ -67,12 +67,14 @@ main ul li span:first-child {
     width: calc(100% / 5);
     padding-right: 10px;
 }
-main ul li input {
+main ul li .text_line > input {
     padding-right: 16px;
+    width: 100%;
     border: none;
     outline: none;
 }
 main ul li:last-child input {
+    padding: 0 16px;
     border: 1px solid black;
 }
 main ul li .text_line {
